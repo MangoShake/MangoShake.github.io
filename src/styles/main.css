@@ -10,7 +10,7 @@
 
 body {
     font-family: 'ProximaNova-Light';
-    font-size: 16px;
+    font-size: 15px;
     color: #464646;
 }
 
@@ -31,7 +31,7 @@ body {
   margin: 0 11px 0 0;
   width: 70px;
   font-family: 'ProximaNova-Light';
-  font-size: 16px;
+  font-size: 15px;
   color: #262626;
   background-image: url('../images/arrow.png');
   background-repeat: no-repeat;
