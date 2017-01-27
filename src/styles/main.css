@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'ProximaNova-Light';
+  src: url('../fonts/ProximaNova-Light.eot');
+  src: url('../fonts/ProximaNova-Light.woff2') format('woff2'),
+       url('../fonts/ProximaNova-Light.woff') format('woff'),
+       url('../fonts/ProximaNova-Light.ttf') format('truetype'),
+       url('../fonts/ProximaNova-Light.svg#ProximaNova-Light') format('svg'),
+       url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype');
+}
+
+body {
+    font-family: 'ProximaNova-Light';
+    font-size: 16px;
+    color: #464646;
+}
+
+.wrapper {
+	padding-left: 169px;
+	width: 785px;
+	height: auto;
+}
+
+.calc {
+  margin: 0 0 22px 0;
+}
+
+.calc > select {
+  padding: 8px 13px;
+  border: 1px solid rgb(209, 219, 223);
+  border-radius: 3px;
+  margin: 0 11px 0 0;
+  width: 70px;
+  font-family: 'ProximaNova-Light';
+  font-size: 16px;
+  color: #262626;
+  background-image: url('../images/arrow.png');
+  background-repeat: no-repeat;
+  background-position: 88% 50%;
+ -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none!important;
+}
+
+.old-size{
+  padding: 0 11px 0 0;
+}
+
+.new-size {
+  padding: 0 17px 0 0;
+}
