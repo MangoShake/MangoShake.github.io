@@ -50,8 +50,10 @@ body {
 
 .old-size{
   padding: 0 19px 0 0;
+  vertical-align: middle;
 }
 
 .new-size {
   padding: 0 24px 0 0;
+  vertical-align: middle;
 }
