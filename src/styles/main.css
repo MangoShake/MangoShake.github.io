@@ -10,6 +10,9 @@
        url('../fonts/ProximaNova-Bold.ttf') format('truetype');
 }
 
+*:focus {
+  outline: none;
+}
 
 html,
 body {
