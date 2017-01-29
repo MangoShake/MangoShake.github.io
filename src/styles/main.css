@@ -82,22 +82,17 @@ body {
   margin: 15px 0px;
   width: 774px;
   display: block;
-  background-color: #2569d9;
+  background-color: #ebebeb;
 }
 
 .fallacy {
-  width: 80px;
-  height: 30px;
+  height: 22px;
+	width: 70px;
+  background: #ebebeb;
   color: #464646;
   font: 18px 'ProximaNova-Light';
   text-align: right;
-}
-
-input:first-of-type {
-  height: 22px;
-	width: 69px;
-	background: #ebebeb;
-	border: none;
-	margin: 9px 20px 0 18px;
-	padding: 5px;
+  border: none;
+  margin: 9px 105px 0 18px;
+  padding: 5px 8px 5px 1px;
 }
