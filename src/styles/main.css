@@ -63,21 +63,23 @@ body {
 }
 
 .block-name {
-  font: 20px 'ProximaNova-Bold';
+  font: 18px 'ProximaNova-Bold';
 }
 
 .block-head_item {
   list-style: none;
   display: inline-block;
-  padding: 15px;
+  padding: 10px;
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
 }
 
 .block-head {
+  padding: 2px 5px;
+  margin: 15px 0px;
+  width: 774px;
   display: block;
-  padding: 0;
   background-color: #2569d9;
 }
 
