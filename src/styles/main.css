@@ -10,10 +10,6 @@
        url('../fonts/ProximaNova-Bold.ttf') format('truetype');
 }
 
-*:focus {
-  outline: none;
-}
-
 html,
 body {
    margin: 0;
@@ -106,4 +102,8 @@ input:nth-of-type(2) {
 
 input:last-of-type {
   background-color: #d6e5ff;
+}
+
+*:focus {
+  outline: none;
 }
