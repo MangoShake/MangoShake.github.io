@@ -67,26 +67,26 @@ body {
   margin: 0 0 7px;
 }
 
-.block-head_item {
-  list-style: none;
-  display: inline-block;
-  padding: 13px 17px;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 12px;
-}
-
 ul.block-head {
   padding: 0 10px 0 0;
   margin: 15px 0px;
   width: 774px;
-  display: block;
   background: #2569d9;
+}
+
+.block-head_item {
+  list-style: none;
+  display: inline-block;
+  padding: 13px 15px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 
 .fallacy {
   height: 22px;
-	width: 70px;
+  width: 70px;
   background: #ebebeb;
   color: #464646;
   font: 18px 'ProximaNova-Light';
@@ -101,7 +101,7 @@ input:nth-of-type(2) {
 }
 
 input:last-of-type {
-  background-color: #d6e5ff;
+  background: #d6e5ff;
 }
 
 .fallacy-of-speedometer > input:focus,
