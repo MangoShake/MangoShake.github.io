@@ -12,13 +12,13 @@
 
 html,
 body {
-   margin: 0;
-   padding: 0;
+ margin: 0;
+ padding: 0;
 }
 
 body {
-    font: 15px 'ProximaNova-Light';
-    color: #464646;
+  font: 15px 'ProximaNova-Light';
+  color: #464646;
 }
 
 .wrapper {
@@ -28,11 +28,11 @@ body {
 }
 
 .calculator {
-  margin: 0 0 60px 0;
+  margin: 0 0 60px;
 }
 
 .calc {
-  margin: 0 0 20px 0;
+  margin: 0 0 20px;
 }
 
 .calc > select {
@@ -45,10 +45,10 @@ body {
   font: 15px 'ProximaNova-Light';
   color: #262626;
   background: url('../images/arrow.png') 88% 50% no-repeat;
- -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none!important;
+  appearance: none;
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   -ms-appearance: none;
 }
 
 .old-size{
@@ -64,7 +64,7 @@ body {
 .block-name {
   font: 18px 'ProximaNova-Bold';
   display: inline-block;
-  margin: 0 0 7px 0;
+  margin: 0 0 7px;
 }
 
 .block-head_item {
@@ -81,13 +81,13 @@ ul.block-head {
   margin: 15px 0px;
   width: 774px;
   display: block;
-  background-color: #2569d9;
+  background: #2569d9;
 }
 
 .fallacy {
   height: 22px;
 	width: 70px;
-  background-color: #ebebeb;
+  background: #ebebeb;
   color: #464646;
   font: 18px 'ProximaNova-Light';
   text-align: right;
@@ -104,6 +104,12 @@ input:last-of-type {
   background-color: #d6e5ff;
 }
 
-*:focus {
+.fallacy-of-speedometer > input:focus,
+.calc >select:focus {
   outline: none;
+}
+
+.fallacy-of-speedometer > input::-webkit-inner-spin-button,
+.fallacy-of-speedometer > input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
 }
