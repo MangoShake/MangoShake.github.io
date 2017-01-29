@@ -42,7 +42,7 @@ body {
   margin: 0 11px 0 0;
   width: 70px;
   height: 40px;
-  font-family: 15px 'ProximaNova-Light';
+  font: 15px 'ProximaNova-Light';
   color: #262626;
   background: url('../images/arrow.png') 88% 50% no-repeat;
  -webkit-appearance: none;
@@ -87,7 +87,7 @@ ul.block-head {
 .fallacy {
   height: 22px;
 	width: 70px;
-  background: #ebebeb;
+  background-color: #ebebeb;
   color: #464646;
   font: 18px 'ProximaNova-Light';
   text-align: right;
@@ -97,7 +97,7 @@ ul.block-head {
 }
 
 input:nth-of-type(2) {
-  margin-right: 62px;
+  margin: 0 62px 0 0;
 }
 
 input:last-of-type {
