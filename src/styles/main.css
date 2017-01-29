@@ -77,12 +77,12 @@ body {
   font-size: 12px;
 }
 
-.block-head {
+ul.block-head {
   padding: 0 10px 0 0;
   margin: 15px 0px;
   width: 774px;
   display: block;
-  background-color: #ebebeb;
+  background-color: #2569d9;
 }
 
 .fallacy {
@@ -93,6 +93,10 @@ body {
   font: 18px 'ProximaNova-Light';
   text-align: right;
   border: none;
-  margin: 9px 105px 0 18px;
+  margin: 9px 88px 0 18px;
   padding: 5px 8px 5px 1px;
+}
+
+input:last-of-type {
+  margin-left: none;
 }
