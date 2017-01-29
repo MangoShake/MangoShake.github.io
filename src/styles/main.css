@@ -88,6 +88,9 @@ body {
 .fallacy {
   width: 80px;
   height: 30px;
+  color: #464646;
+  font: 18px 'ProximaNova-Light';
+  text-align: right;
 }
 
 input:first-of-type {
