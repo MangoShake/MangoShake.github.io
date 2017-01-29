@@ -71,7 +71,7 @@ body {
 .block-head_item {
   list-style: none;
   display: inline-block;
-  padding: 13px 11px;
+  padding: 13px 17px;
   color: #fff;
   text-transform: uppercase;
   font-size: 12px;
@@ -91,10 +91,10 @@ body {
 }
 
 input:first-of-type {
-  height: 30px;
-	width: 80px;
+  height: 22px;
+	width: 69px;
 	background: #ebebeb;
 	border: none;
-	margin: 0 20px 0 15px;
+	margin: 9px 20px 0 18px;
 	padding: 5px;
 }
