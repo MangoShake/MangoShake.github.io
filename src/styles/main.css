@@ -22,7 +22,7 @@ body {
 }
 
 .wrapper {
-	padding: 0 0 0 169px;
+	padding: 0 0 0 175px;
 	width: 790px;
 	height: auto;
 }
@@ -51,49 +51,79 @@ body {
    -ms-appearance: none;
 }
 
-.old-size{
-  padding: 0 19px 0 0;
-  vertical-align: middle;
+.old-size {
+  padding: 0 13px 0 0;
+}
+.new-size {
+  padding: 0 18px 0 0;
 }
 
-.new-size {
-  padding: 0 24px 0 0;
+.new-size,
+.old-size{
   vertical-align: middle;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.fallacy-of-speedometer {
+  margin: 1px;
 }
 
 .block-name {
   font: 18px 'ProximaNova-Bold';
   display: inline-block;
-  margin: 0 0 7px;
+  margin: 0 -1px 22px; /*??????*/
 }
 
-ul.block-head {
-  padding: 0 10px 0 0;
-  margin: 15px 0px;
-  width: 774px;
+.speed-indicators {
+  width: 785px;
+  height: 41px;
   background: #2569d9;
+  margin: 0 0 24px;
+}
+
+.block-head {
+  margin: 0;
+  padding: 0;
 }
 
 .block-head_item {
   list-style: none;
   display: inline-block;
-  padding: 13px 15px;
   color: #fff;
   text-transform: uppercase;
   font-size: 12px;
-  letter-spacing: 1px;
+  line-height: 24px;
+  letter-spacing: 0.025em;
 }
 
+ul.block-head li:first-child {
+  width: 160px;
+  padding: 10px 15px 6px 16px;
+}
+
+ul.block-head li:nth-child(2) {
+  width: 130px;
+  padding: 10px 15px 6px 12px;
+}
+
+ul.block-head li:nth-child(3) {
+  width: 55px;
+  padding: 10px 15px 6px 14px;
+}
+
+
 .fallacy {
-  height: 22px;
-  width: 70px;
+  height: 21px;
+  width: 71px;
   background: #ebebeb;
   color: #464646;
-  font: 18px 'ProximaNova-Light';
+  font: 16px 'ProximaNova-Light';
+  line-height: 26px;
   text-align: right;
   border: none;
-  margin: 9px 88px 0 18px;
-  padding: 5px 8px 5px 1px;
+  margin: 0 106px 0 18px;
+  padding: 6px 8px 5px 0;
 }
 
 input:nth-of-type(2) {
