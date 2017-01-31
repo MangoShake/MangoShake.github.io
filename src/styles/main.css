@@ -16,8 +16,12 @@ body {
  padding: 0;
 }
 
+html {
+  font-size: 100%;
+}
+
 body {
-  font: 15px 'ProximaNova-Light';
+  font: .9375rem 'ProximaNova-Light';
   color: #464646;
 }
 
@@ -42,7 +46,7 @@ body {
   margin: 0 11px 0 0;
   width: 70px;
   height: 40px;
-  font: 15px 'ProximaNova-Light';
+  font: .9375rem 'ProximaNova-Light';
   color: #262626;
   background: url('../images/arrow.png') 88% 50% no-repeat;
   appearance: none;
@@ -61,7 +65,7 @@ body {
 .new-size,
 .old-size{
   vertical-align: middle;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
 }
 
@@ -70,9 +74,9 @@ body {
 }
 
 .block-name {
-  font: 18px 'ProximaNova-Bold';
+  font: 1.125rem 'ProximaNova-Bold';
   display: inline-block;
-  margin: 0 -1px 22px; /*??????*/
+  margin: 0 -1px 22px;
 }
 
 .speed-indicators {
@@ -92,9 +96,9 @@ body {
   display: inline-block;
   color: #fff;
   text-transform: uppercase;
-  font-size: 12px;
-  line-height: 24px;
-  letter-spacing: 0.025em;
+  font-size: .75rem;
+  line-height: 1.5rem;
+  letter-spacing: .02rem;
 }
 
 ul.block-head li:first-child {
@@ -118,12 +122,14 @@ ul.block-head li:nth-child(3) {
   width: 71px;
   background: #ebebeb;
   color: #464646;
-  font: 16px 'ProximaNova-Light';
-  line-height: 26px;
+  font: 1rem 'ProximaNova-Light';
+  line-height: 1.625rem;
   text-align: right;
   border: none;
   margin: 0 106px 0 18px;
   padding: 6px 8px 5px 0;
+  line-height: 1.5rem;
+  letter-spacing: .025rem;
 }
 
 input:nth-of-type(2) {
