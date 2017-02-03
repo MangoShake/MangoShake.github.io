@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'ProximaNova-Light';
   src: url('../fonts/ProximaNova-Light.woff') format('woff'),
-       url('../fonts/ProximaNova-Light.ttf') format('truetype')
+       url('../fonts/ProximaNova-Light.ttf') format('truetype');
 }
 
 @font-face {
@@ -16,23 +16,21 @@ body {
  padding: 0;
 }
 
-html {
-  font-size: 100%;
-}
-
 body {
-  font: .9375rem 'ProximaNova-Light';
+  font: 16px/1;
   color: #464646;
 }
 
 .wrapper {
-	padding: 0 0 0 175px;
-	width: 790px;
+	width: 74%;
+  min-width: 500px;
+  margin: 0 auto;
 	height: auto;
 }
 
 .calculator {
-  margin: 0 0 60px;
+  margin: 0 0 60px -3px;
+  font-family:  'ProximaNova-Light';
 }
 
 .calc {
@@ -40,7 +38,7 @@ body {
 }
 
 .calc > select {
-  padding: 11px 14px;
+  padding: 11px 13px;
   border: 1px solid rgb(209, 219, 223);
   border-radius: 3px;
   margin: 0 11px 0 0;
@@ -56,34 +54,34 @@ body {
 }
 
 .old-size {
-  padding: 0 13px 0 0;
+  padding: 0 12px 0 1px;
 }
 .new-size {
-  padding: 0 18px 0 0;
+  padding: 0 17px 0 1px;
 }
 
 .new-size,
 .old-size{
   vertical-align: middle;
   font-size: 1rem;
-  line-height: 24px;
 }
 
 .fallacy-of-speedometer {
-  margin: 1px;
+  font-family: 'ProximaNova-Light';
 }
 
 .block-name {
   font: 1.125rem 'ProximaNova-Bold';
   display: inline-block;
-  margin: 0 -1px 22px;
+  margin: 0 -2px 22px;
 }
 
-.speed-indicators {
-  width: 785px;
+.blue-line {
+  width: 77.6%;
+  min-width: 460px;
   height: 41px;
   background: #2569d9;
-  margin: 0 0 24px;
+  margin: 0 0 24px -2px;
 }
 
 .block-head {
@@ -97,7 +95,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   font-size: .75rem;
-  line-height: 1.5rem;
+  line-height: 2;
   letter-spacing: .02rem;
 }
 
@@ -116,28 +114,30 @@ ul.block-head li:nth-child(3) {
   padding: 10px 15px 6px 14px;
 }
 
-
 .fallacy {
   height: 21px;
-  width: 71px;
+  width: 62px;
   background: #ebebeb;
   color: #464646;
   font: 1rem 'ProximaNova-Light';
-  line-height: 1.625rem;
   text-align: right;
   border: none;
-  margin: 0 106px 0 18px;
-  padding: 6px 8px 5px 0;
-  line-height: 1.5rem;
-  letter-spacing: .025rem;
+  padding: 6px 8px 5px 9px;
+  letter-spacing: .1rem
 }
 
-input:nth-of-type(2) {
+.fallacy-of-speedometer > input:first-of-type {
+  margin: 0 106px 0 15px;
+}
+
+
+.fallacy-of-speedometer > input:nth-of-type(2) {
   margin: 0 62px 0 0;
 }
 
-input:last-of-type {
+.fallacy-of-speedometer > input:last-of-type {
   background: #d6e5ff;
+  margin: 0 0 0 18px;
 }
 
 .fallacy-of-speedometer > input:focus,
@@ -148,4 +148,10 @@ input:last-of-type {
 .fallacy-of-speedometer > input::-webkit-inner-spin-button,
 .fallacy-of-speedometer > input::-webkit-outer-spin-button {
     -webkit-appearance: none;
+}
+
+@media (max-width: 580px) {
+  .wrapper {
+    margin: 0 10px;
+  }
 }
