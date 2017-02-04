@@ -4,16 +4,21 @@
 	<meta charset="UTF-8">
 	<title>Portfolio</title>
 	<link rel="stylesheet" href="style/main.css">
-  <link rel="stylesheet" href="../fonts/fonts.css">
+  <link rel="stylesheet" href="style/fonts.css">
 </head>
 <body>
   <div class="container">
-    <nav>
-      <a>About</a>
-      <a>Portfolio</a>
-      <a>My blog</a>
-      <a>Contact me</a>
-    </nav>
+		<header class="fixed-header">
+	    <nav class="nav">
+	      <a class="nav__item nav__item_about" href="">About me</a>
+	      <a class="nav__item nav__item_portfolio" href="">Portfolio</a>
+				<div class="badge">
+					<img class="badge__logo" src="../img/D.png" />
+				</div>
+	      <a class="nav__item nav__item_blog" href="">My blog</a>
+	      <a class="nav__item nav__item_contact" href="">Contact me</a>
+	    </nav>
+	</header>
     <div class="section section_welcome-page"></div>
     <div class="section section_about"></div>
     <div class="section section_portfolio"></div>

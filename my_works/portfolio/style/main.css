@@ -5,11 +5,94 @@ body {
 }
 
 body {
-  font: 16px 'Arial';
+  font: 16px 'Bazar';
 }
 
 .container {
   height: 1400px;
-  border: 1px solid green;
   margin: 0 auto;
+}
+
+.fixed-header {
+  height: 130px;
+  background-image: url('../img/background-header.jpg');
+  background-size:cover;
+  padding: 1px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .7), inset 0px -7px 13px -10px rgba(0, 0, 0, .7);
+}
+
+nav.nav {
+  padding: 5px;
+  margin: 43px 0 0 243px;
+}
+
+a.nav__item {
+  text-decoration: none;
+  color: #f9ebd9;
+  font: 1.6875rem 'Bazar';
+  text-transform: uppercase;
+  padding: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+a.nav__item_about {
+  margin: 0 10px 0 5px;
+}
+
+a.nav__item_portfolio {
+  margin: 0 50px;
+}
+
+a.nav__item_blog {
+  margin: 0 0px 0 206px;
+}
+
+a.nav__item_contact {
+  margin: 0 10px 0 55px;
+}
+
+.badge {
+  width: 150px;
+  height: 150px;
+  background-image: url('../img/badge.png');
+  background-size: contain;
+  position: absolute;
+  top: 5px;
+  left: 625px;
+  z-index: 1;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 47px;
+}
+
+.badge__logo {
+  width: 130px;
+  height: auto;
+  display: block;
+  padding: 9px 16px;
+}
+
+.fixed-header::after,
+.fixed-header::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-image: url('../img/Dashed-line.png');
+  background-size: 100%;
+  position: absolute;
+}
+
+.fixed-header::before {
+  top: 117px;
+}
+
+.fixed-header::after {
+  top: 140px;
+}
+
+.section_welcome-page {
+  background-image: url('../img/welcome-pageBG.jpg');
+  background-size: contain;
+  height: calc(100vh - 130px);
 }
