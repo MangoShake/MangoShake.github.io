@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tire Size Calculator</title>
+  <link rel="stylesheet" href="src/styles/main.css">
+  <link rel="stylesheet" href="src/styles/fonts.css">
+</head>
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="logo">
+				<svg class="logo__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="303" height="92" viewBox="0 0 303 92">
+					<image width="303" height="92" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAS8AAABcCAYAAAA/HzMDAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4QEcAgQIX1A6SAAAI5dJREFUeNrtnXecHVXdxr93ewrpEJJQA1nAICBFILwINhApIt1GEylBMBEDvNJUECmi8IoRQSS0IAgBQ49UkRZaRBGyJJCEQEghCWnb7u59/3jOfGb27py5M7fs3XKez+d+ttyZuXPPnPOc51fO76TGnTEXh6LiQGAeML/cN+Lg0N3RMLU+73Mryn3zvQxfBq4ENpT7RhwcejsceRUPuwDTgH7AJ+W+GQeH3g5HXsXBNsAtwGbA+0Cm3Dfk4NDb4circIwGbkLKC2BNuW/IwaEvwJFXYRgGXAt8MfC/NUB7uW/MwaG3w5FX/ugH/AI4Ouv/K3Bmo4NDyeHIKz9UAT8BTg1572MceTk4lByOvJKjApHWBUB1yPsLceTl4FByOPJKjm8AvwFqLe8vLfcNOjj0BTjySoa9gKnYiWsD8nk5ODiUGI684mN74FZg04hjGoHmct+og0NfgCOveNgCJaHmWoi1HhGYg4NDieHIKzfGAH9EJmMurAXS5b5hB4e+AEde0RgKXAN8Lebxy4G2ct+0g0NfgCMvO+qAy4BjEpyzEKe8HBy6BI68wlEJnI/yuVIJzlsMtJb75h0c+gIceXVGCpiIyKsq4bmLgJZyfwEHh76ApIOzL+Ao5OeqzuPcj8t98w4OfQVOeXXEF4E/kB9xgUtQdXDoMjjy8jEe+BMwPM/zW1Cel4ODQxfAkZewOSKusQVcwyWoOjh0IRx5SWndSLwk1Cg04iKNDg5dhr5OXv1QhYi4SahRWIEjLweHLkNfJ6/LgONjHNeOKkZE1elahDMbHRy6DH2ZvC4Gzop57CXAK0QnrH6EIy8Hhy5DXyWvM4GfEi8l4rfAVTGOW4Irh+Pg0GXoi+T1bbSrdW2MY+8EfobMxZE5jl2HW5Tt4NBl6GvkdQBSUgNiHPsEUmdrgI1jnLO23F/OwaEvoS+R1+6ohPMmMY59BfgRcsKDVFdNjnNcgqqDQxeir5DXWJTLtU2MYxcAZwP/DfxvJLn9YyvL/SUdHPoS+gJ5DQN+D3wuxrFrgUnAS1n/H0r0IvZ1qBChg4NDF6G3k1c18nHFSULNAOcBfwt5bxDR5LWEnqm8NiK3Oezg0C1RrJI4VXTMgaoxf2cQQVYH3k+Zvyuy3ifr/eDflYG/g9fLmPeC71eaY9LAd4iXhArwc1RRIgwDiSb6EShT/9MitmmpUAMMRmrxQeBeXA0yhx6IKuCzqGLoJsBqRAh15r0MIok6fLLx/q7GJ4+6wDVTdExDqKDjwE+Zv1OB64W9H/w7leP9sOPb0YLrOPgjcEXE+wPpSJDZGAocVuCz6Eo8jRTms7hAg0MPRRUwH3gYuJBk9dp7C+4BLiA6wXQg3V9R5cIG4AEUuPgXmqgcHHosqlCnfgx4Hm1l/x2U1zQcGAL0x1czQdMvWxH1RDwN/AT4JMdxQ3vod80Aq4D7UZrIf4Gmct+Ug0MxEFQTa4E7UFZ5Baq4MAwR2FDk3B1oXkOAzZCpuSny+QxEpmStOb/SXL/K/L+S7oU30DKhD2Icm2+BwnKhDUU/70WR1rlELyp3cOhxCDOFMqjzrzOvjxCReZ2/EplY2TN4HcpCH4jU2jBEbKOA0ebvAea9IAnWmVctPslVBX6WAvOBHwBvxzi2ApFzT0ArylObAdxgfndw6JWIQw51yPFdiwhnW3PeKvNqQqptqXnlMsGC2AipulGIIIYgohyESG4wShDd2Pxeh6JlVeZnjbmnfsQP+S9Hiuu1mMcPNvfVndGC/Fj3IfX8YblvyMGh1IhDXuvws82rUU7T1sCWwG745FOH9i1cYI5ZYv7+CHsC51rzWkRueGptACIrT+VtbO5hE3zztR8ivxrzcxBSfq2oFM7jCdpoDLkXZZcTzyDz8F40eTg49AkkNctagXnm5WETYEfg8yjt4iBge0QoK5G/5T1zzodIrS1EJLeS+JUYPDM2yXerQepuCCKgZuDlhN+5DXgUkWQ7MmeDeWherlotfvoH5vca85ntpm2GJPzsKMxChDWDZGrXwaFXoBg+pWXAU+YFUj/bofWEOwJ7AwfTceAuMq/VKLHzA+BdRHLLzWtZgfeVNq8NSJHMzfM684DJdEyqDbZbdiKuR15pRFwjgZOAnYrQ1qDI4T0oUuqUlkOfRWrcGfmO6djYGBHaWFTZYTywL3LmB9GIlNgGOhLOh6g+/IfIfI1jYnYHDAZOBg5BqmvjAq7VhqLAfwVeIN5SpH2BeuzZ8/2A9xEJpoFd0bMJEnBXw0u/+Rh4DvWDIKqAI8y9txfxMwehPjYTuT++UqTPSKEJbDZq6yC2Rc+ojY7tXWE+9zU6FgcYAOyB3BjFWtZXgRKVFyQ450A0lm39qgaN0YfN31sB+yHLpFj17hYDs4oZzRuIzMrsZE9PSb2NzK+ByP80FhiHNnrdC/nQxmSde4BppFYUGFiHOvYyZCrNBf6NFNsnaFCni/id8sHmKJJ5FOqg+W5gC1Km9wG3odSOODXDRqECiocjf5+NiKqAX6O6ZYOAa4FdytpyPprR5HUNCkC0IiI4FqV+FHNNbhVyY0xBE+gVaElZsT6jHT3HacAvzXcZbn7/Op2fTwoN/iPN3yNQsYAjzXmee6IYWEZ8/+9WaAndwXTMPshGK/ALfPK6CCW/FzNPshF4rJjKayQwAZmHr6NZI030LJ4yDVEHbAHsj9TZLshv5i0jssEjS888XIHSIN5Cs8kyfP/aenMv3quYqECm8kmoUutI8jfJM+a+70GJpQuIl1hajTr4xabtcnWW183xC4BzUHXZ7paL9x7wVfNzY6QSxxfx+i3ATajM94fAnsDdKIex2PgYBbg+Qn3kdsIJMo2e4ZVIvf8JLT0rRdrQWWgyiBoPlcCJqDBnnH1NX0DPbANSaXdQmlSjFcVskGWIbQ8DLkWz/jPIR7OY8DLJGXwzcSUwB9/5vTPymf0PsA+adTyi81CNr2yGoHyynZDq8EgqjTrme6gDLUYq8G3z93p8/1QLyYitDqnH09DKhMHkP8O0ogjtdLTWchHxzJYKYAekto4gnmJoxM8D2xL4Ht2PuMCfdEADqFjE1Y6e/3nIGvACMWeSP3F563RtuA8R1xjgFOzP6V/AdeaejkHPtBSYjRS9rb9XoPa+GPgm8frHGuByNJ77me9ZqhzJ60vl86pGHeFsNDj+A/wFsfJcRFRJKhnUIdm6D/ITjDPXHUK8ks42eLlqi4E3gXeQxF+FzFFb9v0g4DPo4XyXePXwbWhC/pDpSAUkccIPB45DHSxOhVgPjwGHosnkF2hdaxiagVdRp8zuvG2oY+4R8TnvoUAMdBzYGfT8J2BfvdCEBs1jaMC/TGe3goe5pg3jEHcKKfMrstr6G0jlhA22DNBgvkt2PmEbUkUTsPfFpShwtQA4HSnqMLQgkr4LqZy7kSUShsWI6LIrusRBLSKZWZb3RyB1eCHJfLV3o/4IIt7bsedfvmHaI1tAecUevoJ9XC0AJpQqg70V+VCmAeeahrjcvPcy8A/kkH0HqaINOa7XZI59B7jZ/G8XNHDGm5+b4CezxsVQ8xoLfMH8bx3wJPIHZZPXcCT9j0f+l0LarxGR+p3oISetB7afaduvJzxvJTKT0kjdHhdx7GPA0dg3070MO3m1ACcA/7S8vyVqZxt53Rk49zykqsOwFCnHVxK2QxD9UXDFphLeQkQ6z/L+3sDfI67/O0SuW6AJ3YYX0SSfQj5TG3GtByaikkbFRCXwJbTe94CE565EPjHQMz0NO3HNQ4Gsjxqm1nd6s35iw9eAL0d81q+ApaWulLAa2crTkX19BPIr7IkcpG8hMnsayfi3iL9weI55gSTqOKSG9kLlnrcyP/vFvN48lO4xHUVgghiOyO17qNELccKvQ530r8ikXpHw/C2Rb20yUoBhaMY+a01H7V1jrrOt5bhlaMKxEdcOSF3bcDd24gJV8rD5UJYjFboORWq/jV1dPIjM/1E52q0SmWIf09kc/yby09gwE/lSPaLNBH4OQW4Sm+qah18n7mTkjwxDC9ofNIPcJadF3M+TFJ+4tkWWxI/o6JrJvkcbIV2PxnAKjZEvRXzW75EJ3Qn1ExsGoGCG7R5eAe5rmFrf3lVlXv6DHsYM4Awk0UGqaTx6qO+j8suvI2X2GvFDq43I7HsTzVyVyIG+E1oNsBsqAx02WOaigfYQnWfv/mgGPAY5HwtprzR+jtaj5FdH63A0K+5jeX8DqtO1OyLzbCzGV8C7IT9dGDLIfzk74l4uxJ50uwZFCm3YG01kNkKajv8s/pfohfF7I3Mv17OpQyWBrqOjy2I4MuXCJrkMMlGGICU4iI6pJBmk9PeN+NwrkSr5DPDjiOO8+mqVaKzYiL0JKd5i4hjUr2wqeg3y2R1E5xQnUFDsevP7SBQAsuHfqCyTDSeitB0brmmYWv8JdH2NqseR0joSKbGdA+9tbV7fwo8YvoLU0Bsk2426DUU7vTyZAUgpbG5+7os65ENokM6xXGd3ZD4WkqPVglTWvSgtIckqAQ+boxnxZGTmhmE28uNshr3s9e9QUKA/UpE2M2kFGnQ2TECkbsMtqJOGoQr4IXZC+sCc345I+sAcbeNNgHHgpSoEcSj2yaAVVcgdjcy0pPgneu6g57eR5bgm/PbeCT0bG/5KYSZyENugNIwTIu5tNjIH98DukrkcqeUUUrGfjfjMq7C4ieonNowhehf7J5ArAyhPgb3VyG/1HBoAZ9LZn7GNeR2GpOwCZGq9gMgsqWpZjxzPryL1symaiRfkOG9L7A81FzYgX9YMc+/57ut4Aur4tg1EmhEpXY8I+XrCCe5NFGEEdcTvWq6XQVGoqEjOhdjNh4/Q87VFSg/FV95huAs5ouuQT29Ynu2WjRvQ5BmMrm1q2tamAN9Gqm4/pADjYhVS2Neg/r479vYGkfVr5j6mYCeJ1URPKknwPaS2bCs/mpB59zs0eU4mXJ3+ExGq157nR3zmi0jB2TAJWUxhaASmNkyt/9T7RzmrgzYgpXA/ku1nEO5L2tK89kOJqAuRUpqJyGgJyTOhP4553AiSRxJXIdKajtRHrmCEDduh9IeDsRPo88hP8hxSl/djd2xfguT/YGS+2K75IVKbNhyOnoUNNyDVHIZNUMlxm3/oHXzz4xjsCrIdmXEPkDva7BHTk3R0Q1Saz9jFcl4G9c8m5P9bSTiRtqOo3R2o/65GlsN8/Gd/EVK7YViK7xP7AgqQ2HAjHbPu80E9ijB/HXsfeA71l+fNd55GOKG2I9W1CkV6T0dBCRt+jsWCqp/Y8Fmi1fxDBFQXlL+0sZdvcy5i77PR4LA5xIeb166o4z2FomVJTMokGEX8MPQi5Du7GSm65pjnZaMGZeifjz3naAWKuExDg6oSDQCbOpuBHxb/GiJEG36DndyrkTKwDcQ3TBvYJpODsTvGW5Di+wCR3InY1d1scx+FrO3cHCkPG/6OrxIWI9V/SMhxFfjLt8JwKAr723AD8glXIZKzjcl5iNjzTbCuRf1qCnaCWYbSbv6C1hyDcg5t+53ejvzTIFL8YcTn34NI0YazkEix3dctDVPrO4zzcpOXh2YkP0egEGkcU2EtivKUirjA7l/ykEZKcBoyL5aT//qtSuQDvBx19rCkwGZk959jvvc+6BnujVI3sJxzNVIBQ5H5Y0s4/Bdwa8Q9noadINuR+dNgeX8r4PsRn/02vuo6Gq22CEMbCur0R0GHuKg2bTUPPadTsW/QkkbKw/OPLUfEfIjl+F2RQz5bFVWjNA8b2b+NiCKDVMcXsOPv+LXtkixdakH5cZNRBNDWr2aae61FwZQ25Ns8yHLdD4D/w3fhnIN93LagSdHm6zoATWw2ofA3slQXdB/yAg2Kq4lHXGvQQHi1hPeTIre/6zk00AotSTMS+fbOxZ7+MB85nO9AAY/riJeYeh1+QOJ4OgZJgsggZ6ot32wEanNb6snzyIyzteXh2B3jTahzr0Uh+5Owd+QKRDynE08Ve8c0InK9zHxGlAP+RkSQQcxFAzps8A9CJaGyyesU7GTfZj7nHdOm5xOdgnOK+d5J11xmcpzzLiLq+5Ef7Cpyl25qR4rRa6M9UaDNhl8j8u+E+okNNSgQZXN3LARubpha30lxdhfy2hLJ021jHLsemZePlvie+pE7R8xbEJ4vapD/6GK0DCoMq1HHugB1+OuQfzAOFiAztgk5UydHHPs0mn1tmIg9itRkPse2ImGbHPf8CnLUp9BkEKWoUiTvt68jR/c95u+rsDvFP0UmePYKkDeRagtzKA9ACmVa4H+DEdnbVNdLyJwHma+5Iqb55hbaCH418stegoIjNxId5QziNXMuiMwvwu57XIjMS9uKmkOI9m3OaJhaH1qDrzvsmD0CJSTuEePYNmRW3RbjWC+imC+GkdtsXJPntWuRqXcT8kXZiOtlZKqdao5/jvjEBSK6BjTYL8PuU2hDg9uWxrEn8knYTL7H8VMCstEPkWY9dlyGTLR9iM4RSorVKGJ2KD5xHUZ05O+3hEdaFxEdnd4H30dZgUjBRsLtwJ/xyzt55n9X4WWkXM9GpuRzxCcuT3V5bXES0T7U65G6DMNopDhtE8l7yDQNRbmV1wAkKb8a8/gbUfg5ymk5GjXmUahz/Iz8aroPJ3pRaTuWLOEY2Bzlw4xDCjK7jE8KqYUbUDR1H2Q2rCB3PbM0IqMFyJ8CMmtGoohbdttVIWd0VDb8Tsi8mBNyn41owNvSV4Yhn8sTIe+lkLN6FhrwYxHZrqOwEioVyAS9nY6h+QpExE/ROahQiVTXLYSvKvgUZbXXEO7XXIsc4YvRYByMChOkQz7nTXzVBYr+zUWWR9y9GJLCS66djQhlCSL1ychVsBD7aorgvb+BnxpRiZ5ZWB+uQOPjrojrbYX6dNhqgQwws2Fq/QLrF+qCYoQ2VCEf16SYxz+MZodVlve3QXb3gXRUMs8gWR53ww0PX0ENbyOwNWj2uiv2FX0MRXXN1hBOxCn8aE8FinrWEi/BNY0G5hr8AVqHSCSs1lkVckhHdVwvZST7GK/Y3uqIc+vM+WFmQwo9zxbzPYehwevV78oXFYSXDffaMqxUUyUioKg2rjX3GEZeKeSQXou/iYy3c3v256whnOyHUtjSsyh45BWsUFyPPwG1EY+8PsV3vFea79ke0p4V5jtGXdPbayLsmEzD1PrI3MhyKq+ziM6mDeJV5HMJI64tUSLnUYT7ZPZHTu6f4BdIi4NB2J3noE6eb6jeq2YRB+0UvhtQE/mrREi+/jL7sxfH/J6FfE4cFNqWzUix5EIj+UXB4/aJYqGhwPPbCrznxuz0hyQol8/rWJSwFqdG0DyUn5JtLm2N/DSPI4d31JKE7ZGPYVKCe/R2H7KhCV8d9QV0tx3Du9v9uO9TRNRPbMjZHuVQXvuhekZxlt0sQ8uH5gT+9xlkrh2BnPJxi+htghI7xyKyW53j+EE53m8mmcP+UORs92qUF4IKRJ7PIx9Nvopld6R+x2A36/qhHLY7zP/qUC7ePijyNqBI36cd+VJuQSb1T1GQIntm7of8Qxchc/drKKjRn8JrpHum1VzkK8v2A45FpWL2wE9gLrQqbxUqSjAF9afj0GSdb5Jzj0L9xE7irxL5ey8iR0n3riavnZACipuEei5y5taiUPIZKMdpCPnNVHUoC3h7NGijHH657jEJeY1CjtEvFqENgzgYRc8OJTcZZ3+3iUiJDs9x7Hx882J75Jz/IvLNFFO5L0YDGBTMmIK9f76GCLs/atektady4UCU5rAbClR4xTUvQI74YvulpiA3xBbEz9/rzbilYWp9zr0oupK8xqBZNU4d7LUoAjMDzfKno0FajEhMCkU3H8XPF8uesSuwV+0M3mMce9/LXSo2cYGeXy3xZ/86FBr/GfFSU7ys+dnmc67BnpNTKG5GayJHo6RFW9/8N37E+VtEr7PMFxVoMvCc90cj0i4FXkU5U+2IhFdj36S5t6MKWRMz4h7cFRiKOueuMY9/GHXSW9EsXApsjdbhXYISZIORjSGE1y0KYgnxSlmPRYPRhjQaJGEqpo1olZlGRBTH97Y1qqBwNvFV64vIZAQRRVTdqnXmfvJRY149qBSqOLG/5TgvK30JSv04GfvC+TbCy1dnzHuDiO7/F5jPGU30GsgWZNomtQRS5tzf4gdTphMvh7G3ItUwtT62udwV5DUQpUTkqssUxI6IwEq9KUR/c2/jEYl5QYGNiM7xymDPJg+iEvkwbEtymlHS7VzCn8VolMBpU5wzUWZ8FAagCeB8km1gsQEpnKVo8jkZu59yDiqdsoHkzyyF1vitQJHjqCTcNxCZphCZTrAc12Lu5+WQtsvgP/chlvODZV6Owr7EJ4Mmj4UkJ68qpLKC5aPzrUDSYxFWBjouSk1elWix50kJz9uxwM+dhxRPXBVwIkqYm4JkfD+is+vTxFsWtAPRg/FeZB7b8AvsZLAO+UeiQs27Id/eCcmbkMfRsiTQmsg9Lcc1onWJt+fxGUF4RG+LGqcR0TehZM5cy43OxR5IOBFNqrbPudR8zhiiM/4fRkGgYqIC5SxWIlXZgp8Ht9T8bzD+sqMMIug1SCkOQxOWly/nKRlP3Y0x1/D6lRd0WIjU6EBzbrM53yudXYl8tzXI59eIny+3EPlOByHXRCpwfjW+a6MRfx/LgtNCSk1ep6OH31UpGS+gZSDPo1r2Pyd+Mbv9UcLpJKSEopyyreRu/CqkVmy+s3a0/OHokPZpN/c9GTt53YGURRj6o8DEKYSXgwb5VSoId9gHN1PYwlzHpv5eJKaPIgfGIrPWhqdQdQGP5GxTdhrV4bIR1yhEOLa+/wD+HgYTsZePaUEL5T0MRCZvrmhyCg3m1wlfrHwmmmzWIzXq5Rv2R/7HL6NntsJ8Vy/aezUK3BxpPuMTRCSDkZl8DVLyXqJ3o7nXOjRuBiC3wED8+lyVaBxMNm2+FyLJVah/eib7JBQd3sJ8VjP+gvAB5u8m/DH1BDLLC0IpyesIZPLE3QCjEDyJZv7g1uWvokjRtdg3PcjGtmi94QtEK69Wckcad0KD3obbUCG8sAHrmTY2Al2KorZh/oEvIdURZab/GZm9NlUxDZXHAXV2mxJej9RfPvX4g6hEE51tE41WZJ61I2UWtQPPY0QnI5+P3Z+5FpmbzajPRG0wcht+OWZvY9YriEdeq1A0Mxtj0ZgZhCaXWSiwsjlSPwfgP9fHzGetRLXElqGUkXr8nbn2MK/5iLimoPWX/8HfKm4Gcpfch8jw54hUz0WBrbeQEjwd9cu7UGT4eNOOf0NuiUOQApuEzPFfms+8EwmK7dCCeNB604JRKvLaC63MH1Ki63t4Bi3cfJHwAnqPo1IsU4nezSSIUWj2iorgtRCdW1WDOorNR/QJMgmPQbNlEni7zGTP2hshx/Kp2AfnR2gWfRMFQ8JMp8X4nWw7wgeZhydItmrBhvFocNhwN3rGteZ+bHsKNCNVZXt2n0c7EdlwJ5q4QIPYtmB4BQoweFFqL3cw7h6iM/CL+AUxCRHXPNSuGdTGy5E1cAl+FdnFSBjMQ77Pi/HXyr6L+n0VMulnIeW0GUozedFcp9kcf5Fp298hBTcC32K5FJF4M5rU2tH4eB+Nq6fRZAiqFfcAqtI6yNzzZYhIrzXt9RhFCkqUgry8bPZS5aqk0cO4HplNufY7nIt2ybmcZL63KAfsBqId9rk2qLgOPfxcGyksQnI7jQbMHLTY+lU6JvAdhDr2rtjV2u1oQH6MOunnLcddjZRdP0SEW1uOW2OOLUZi6GTspWPW46cpfAYlcNpwDyo1Y8N52AMxS9CgSiPTLGo/zFuQegF/r8M0qudVi1wFtoomi9Cgz/ZVTkDtvRaRwOP4i8A3oEX6ngk7DhGmt9bwSKSQU8g8/BSp01XIktgajYHlaFJ9HX8ruH3xx8VhaCLZzlx/hvku+yL1NgX5ULdBLo+r0WQxDpH+X5Hv+FdoYrwD5Qh+AylTUER1hmmfK+m8zWBsFJu8RqGUiB2KfN0M6sQPowf/CsnWjn2MfEBe4bVCdrgGOctt6/Uqkf1va9sG/LpP81GHsimJm/C3fm9HAyS4iHVT1NG/T/isn0ED6lLUYVpRB7Q58F/BnxU/R7Qaug/5FgvFBKLVkFcmuRqZuTaSW4MGTVQJ6qicsDsR8VUgkrM59OebNvJIuw0N0uno+RyGvzFyGB4gnGDXIxfCUmSKBdVjLVIsL5nPq8Ff+DwLKcRr0QT3kvn/cYggWpDi/ikirefoOPG9i4IfadPGNcAj5hqPokj5aajfrjXffTlyug9A5NOA+kLavG5CouIZ8zxWmjb9AJmhI83/bHsdxEIxq0oMQqbI4cW6IHpQy5AsvgH7FmVJcASaMeIky9rwLPZcpGPRQAhztGeQBPc2XBiIiOxIy7X+gWb1bHXTHyWL/hK7P2+VufaVqCNmUMTwIcL9kGnku3jIXP9P2KtjLkWkk3Sxt6dmW8x3qkIDxVYS6UNU3eMd0w6PY58ULkcTU1hmdi0iDVuC7duIQOeYnzcQbvK3I9P893QMsmTw93D8A/bnOd981/cTtluvRXdIlahDcvXwIl0vjR7w/Uiiv1PY5Tpghrn2dUQnXUbBlhTaDykbW4TwZTqWSm5CPghbZ98ZOT2DJup4ZGbZfFHtKE/pfGQy/xA53NOoVJAtgHI/fs7YBKLL+q5H5kPS3KZaNEvfjJTSN7HXbc8g8/Zd1E8vwN5fF5lr2paUfAd7Ceo2pJrmoMnkTOy+ymY0AWxKZ/XegsyzKB/mn/CJq5LuUQy0HEjhp1PkjWKQVwqZLqcUeiHUYd9AJslfkF1dCryBFNgVKGqSdK2aLdJ4JvaE1BZEmMGSKmlkqqUJfxaDkRnyexT9PArtmWgL3y9CM/9VaNH1I9jzs4JYhdToejRwL8px/FiSVegI4krTfgOQGWgz4Wfjm2ffIjrgcin2vjIE+XRshPQvfFP5B9gTUkHEfyz5YQ4y7UCTyXHIRCt0YXdPRAUyb+8r5CLFIK/vI3u6ELQhE+lBRFpxaiYVihWIcN9GKmVEzPMyhCuvrZCT1Nams5DZk40GFGK2bS91FIoOTkKEG4ZW5Ce5Aim5H6NoZtzo1w34qRGHE72LTSGYjQgcRBS25WKtiISXIPKJ2vD1JfPdbTgBRb9tnzMNkf4W5p5KkdrTjIIlTaifXU3p1oj2FBxc6AUKJa/D0Cyf73VakRP+AaQSyrEg9RpkXv0a+269QaTpHGlModnftpVWI3JihiW2rsXPpQnD/sics5mib6Jo3N3m/p/G7o8LwwLkq/TWaX5q2iNOWyRBBkWhl6Do1LnYFW9wM5BziK7Vdi32fjMe+ahs/fNl/K3eBiL/ajGDTY0oMnwrvrtgJ5RPWLYSxmVGBgUfHin0QoWQ114o8pdrk4owrENh7ftRlKKrK0hm4yHkHL6C3OVVWuhsolShyMzrdLbja5CymmW53qfI8f4M4T6AauRTXEe4ifEsftRmY5SwO5N4/oRapIaCA2kmIrQdKV6enldq2ssJq0DKsJqOwQhvZ6BnUZ9IIXPrbDoHLapR4CAqz6wVTUrtIednELF4LoD/4puNwym8OGAjikjPpWMhzf+goEBTkdq2J8FbihRnXXDui+UZbdwBZdrunPC8FUgh3I4eYqGZ2cXGaORTilo3twplOQdztIpRYLBQpPB3b+7uiFvErxjF/hy6Mbo62rg5igIlIa4lyLdwG1IhpdzluhB8hMyMd1FmcFhOURudE2PLTVzgl3rpCYhLSI64HKxISl6DkePxyzGObUc+hNuQQ3gxuXcn6Q7YgJzKi9HSis2y3m8m3i4+Dg4OJUQS8qpFOUy5ltg0IRv/VuSk7olVIb166t76rWDV0UYceTk4lB1xySuFli5ElbFYg9IObkPLJfLdTbo74VW0LusqtIi6BvntupuvzsGhzyEueZ2EInFhWImc17ej6GFvqwa5BC16fQvlg+VaCO7g4NAFiENeB6E8ouzQ8TJUIO5elCSYc7ePHo4rkB9sSLlvxMHBITd57Y6c7cE9DD9ECXczsecu9VbcQXl3GXdwcDCIGojj6FhD6H2U2/Ug0TWTejt6u8J0cOgRsJHXpoi4dsPfguxRlIXs4ODgUHaEkddItDfepqgY3SMUKZ3fwcHBoVjIJq9atLPzg8intQyX5ezg4NAN8f+yxGRfrATqfAAAAABJRU5ErkJggg=="/>
+				</svg>
+			</div>
+			<h1 class="title">Шинный калькулятор</h1>
+			<p class="site-description">
+				Наш шинный калькулятор позволяет подобрать шины по типоразмеру, он предназначен для математического расчета возможности установки шины на вашем автомобиле. Для начала расчета на шинном калькуляторе задайте старый размер шины и новый. После этого нажмите кнопку «рассчитать». Помимо наглядного отображения изменения размеров шин, при помощи нашего шинного калькулятора, вы можете увидеть погрешность спидометра вызванную установкой новых шин. Расчеты на данном шинном калькуляторе носят исключительно ознакомительный  и приблизительный характер.
+			</p>
+		</div>
+	</header>
+
+  <div class="container">
+
+    <div class="calculator">
+      <div class="calc">
+        <span class="old-size">Старый размер:</span>
+        <select class="old-width" name="old-width">
+          <option class="old-width_item" value="">175</option>
+          <option class="old-width_item" value="">185</option>
+          <option class="old-width_item" value="">195</option>
+        </select>
+        <select class="old-height" name="old-height">
+          <option class="old-height_item" value="">70</option>
+          <option class="old-height_item" value="">65</option>
+          <option class="old-height_item" value="">60</option>
+        </select>
+        <select class="old-radius" name="old-radius">
+          <option class="old-radius_item" value="">R13</option>
+          <option class="old-radius_item" value="">R14</option>
+          <option class="old-radius_item" value="">R15</option>
+        </select>
+      </div>
+      <div class="calc">
+        <span class="new-size">Новый размер:</span>
+        <select class="new-width" name="new-width">
+          <option class="new-width_item" value="">175</option>
+          <option class="new-width_item" value="">185</option>
+          <option class="new-width_item" value="">195</option>
+        </select>
+        <select class="new-height" name="new-height">
+          <option class="new-height_item" value="">70</option>
+          <option class="new-height_item" value="">65</option>
+          <option class="new-height_item" value="">60</option>
+        </select>
+        <select class="new-radius" name="new-radius">
+          <option class="new-radius_item" value="">R13</option>
+          <option class="new-radius_item" value="">R14</option>
+          <option class="new-radius_item" value="">R15</option>
+        </select>
+      </div>
+    </div>
+
+    <main class="main-block">
+      <div class="main-block__header blue-line">
+        <span class="main-block__header-item">Размеры</span>
+        <span class="main-block__header-item">Старый</span>
+        <span class="main-block__header-item">Новый</span>
+        <span class="main-block__header-item">Разница</span>
+      </div>
+      <div class="main-block__lr-wrap">
+        <div class="main-block__left">
+          <div class="main-block__left-line">
+            <span class="main-block__left-name">p (мм)</span>
+            <input class="main-block__left-input" type="text">
+            <input class="main-block__left-input" type="text">
+            <input class="main-block__left-input main-block__left-input_blue" type="text">
+          </div>
+          <div class="main-block__left-line">
+            <span class="main-block__left-name">с (мм)</span>
+            <input class="main-block__left-input" type="text">
+            <input class="main-block__left-input" type="text">
+            <input class="main-block__left-input main-block__left-input_blue" type="text">
+          </div>
+          <div class="main-block__left-line">
+            <span class="main-block__left-name">d (мм)</span>
+            <input class="main-block__left-input" type="text">
+            <input class="main-block__left-input" type="text">
+            <input class="main-block__left-input main-block__left-input_blue" type="text">
+          </div>
+          <div class="main-block__left-line">
+            <span class="main-block__left-name">h (мм)</span>
+            <input class="main-block__left-input" type="text">
+            <input class="main-block__left-input" type="text">
+            <input class="main-block__left-input  main-block__left-input_blue" type="text">
+          </div>
+          <div class="main-block__left-line">
+            <span class="main-block__left-name _clearance">Изменение клиренса (мм)</span>
+            <input class="main-block__left-input  main-block__left-input_blue main-block__left-input_right" type="text">
+          </div>
+        </div>
+        <div class="main-block__right">
+          <!-- <img class="main-block__right-img" src="src/img/tire.png" alt="Шинный калькулятор"> -->
+          <div class="main-block__right-img"></div>
+        </div>
+      </div>
+    </main>
+
+    <div class="fallacy-of-speedometer">
+      <span class="block-name">Погрешность в показаниях спидометра в км/час</span>
+      <div class="blue-line speed-indicators">
+        <ul class="block-head">
+          <li class="main-block__header-item">Показания спидометра</li>
+          <li class="main-block__header-item">Реальная скорость</li>
+          <li class="main-block__header-item">Разница</li>
+        </ul>
+      </div>
+      <input value="90" type="number" class="fallacy"></input>
+      <input type="number" class="fallacy"></input>
+      <input type="number" class="fallacy"></input>
+    </div>
+
+  </div>
+
+</body>
+</html>

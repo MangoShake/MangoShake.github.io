@@ -1,0 +1,312 @@
+@font-face {
+    font-family: "ProximaNovaRegular";
+    src:  url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
+          url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ProximaNovaBold";
+    src:  url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"),
+          url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNovaLight';
+  src: url('../fonts/ProximaNovaLight/ProximaNovaLight.woff') format('woff'),
+       url('../fonts/ProximaNovaLight/ProximaNovaLight.ttf') format('truetype');
+       font-style: normal;
+       font-weight: normal;
+}
+
+html,
+body {
+ margin: 0;
+ padding: 0;
+}
+
+body {
+	font: 16px/1 'ProximaNovaRegular';
+  color: #464646;
+      min-width: 620px;
+}
+
+.header {
+    background: url("../img/background.jpg")  no-repeat center / cover;
+    min-height: 843px;
+    min-width: 500px;
+    margin: 0 0 66px;
+}
+
+.container {
+    max-width: 1148px;
+    margin: 0 auto;
+    width: 74%;
+}
+
+.logo__svg {
+    margin: 26px 0 14px;
+    padding: 0;
+}
+
+.title,
+.site-description {
+    padding: 0;
+    color: #fff;
+}
+
+.title {
+    font: 4.5rem ProximaNovaBold;
+    text-transform: uppercase;
+    max-width: 520px;
+}
+
+.site-description {
+    font: 1rem/1.5 ProximaNovaLight;
+    max-width: 490px;
+}
+
+.site-description:before {
+    display: block;
+    content: '';
+    background: #2569d9;
+    width: 84px;
+    height: 10px;
+    margin: 55px 0 60px;
+}
+/*****************************************/
+.calculator {
+  margin: 0 0 60px;
+  font-family:  'ProximaNovaLight';
+}
+
+.calc {
+  margin: 0 0 20px;
+}
+
+.calc > select {
+  padding: 11px 13px;
+  border: 1px solid rgb(209, 219, 223);
+  border-radius: 3px;
+  margin: 0 11px 0 0;
+  width: 70px;
+  height: 40px;
+  font: .9375rem 'ProximaNovaLight';
+  color: #262626;
+  background: url('../img/arrow.png') 88% 50% no-repeat;
+  appearance: none;
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   -ms-appearance: none;
+}
+
+.new-size,
+.old-size {
+  vertical-align: middle;
+  font-size: 1rem;
+}
+
+.old-size {
+  padding: 0 12px 0 0;
+}
+.new-size {
+  padding: 0 17px 0 0;
+}
+/****************************************/
+.main-block {
+	margin: 0 0 52px;
+}
+
+.blue-line {
+  width: 78.5%;
+  min-width: 500px;
+  height: 42px;
+  background: #2569d9;
+  margin: 0 0 24px;
+}
+
+
+.main-block__header {
+	display: inline-block;
+	line-height: 2.85;
+	vertical-align: middle;
+	background: #2569d9;
+	color: white;
+	margin: 0 0 25px;
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+.main-block__header-item {
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: .75rem;
+  line-height: 2;
+  letter-spacing: .02rem;
+}
+
+li.main-block__header-item {
+  list-style: none;
+}
+
+span.main-block__header-item {
+  min-width: 90px;
+	margin: 0 1px;
+}
+
+.main-block__lr-wrap {
+	display: block;
+}
+
+.main-block__left {
+	display: inline-block;
+	vertical-align: top;
+  padding: 0 35px 0 15px;
+}
+
+.main-block__left-line {
+	display: block;
+	margin: 0 0 15px 0;
+	vertical-align: middle;
+}
+
+.main-block__left-name {
+	display: inline-block;
+	min-height: 30px;
+	min-width: 80px;
+  vertical-align: top;
+	margin: 0 12px 0 0;
+  padding: 7px 0 0 1px;
+}
+
+.main-block__left-input {
+	display: inline-block;
+	min-height: 31px;
+	max-width: 70px;
+	background: #ebebeb;
+	border: none;
+	margin: 0 11px 0 0;
+	padding: 0 5px;
+	outline: none;
+}
+
+ .main-block__left-input_blue {
+ 	background: #d6e5ff;
+ }
+
+ .main-block__left-name._clearance {
+ 	width: 270px;
+ }
+
+.main-block__right {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.main-block__right-img {
+	background: url(../img/tire.png) no-repeat;
+	width: 350px;
+	height: 300px;
+}
+/***************************************************/
+.fallacy-of-speedometer {
+  font-family: 'ProximaNovaLight';
+  margin: 0 0 100px;
+}
+
+.block-name {
+  font: 1.125rem 'ProximaNovaBold';
+  display: inline-block;
+  margin: 0 0 21px;
+}
+
+.block-head {
+  margin: 0;
+  padding: 0;
+}
+
+ul.block-head li:first-child {
+  width: 160px;
+  padding: 10px 15px 6px 16px;
+}
+
+ul.block-head li:nth-child(2) {
+  width: 130px;
+  padding: 10px 15px 6px 12px;
+}
+
+ul.block-head li:nth-child(3) {
+  width: 55px;
+  padding: 10px 15px 6px 14px;
+}
+
+.fallacy {
+  height: 21px;
+  width: 62px;
+  background: #ebebeb;
+  color: #464646;
+  font: 1rem 'ProximaNovaLight';
+  text-align: right;
+  border: none;
+  padding: 6px 8px 5px 9px;
+  letter-spacing: .1rem
+}
+
+.fallacy-of-speedometer > input:first-of-type {
+  margin: 0 105px 0 19px;
+}
+
+
+.fallacy-of-speedometer > input:nth-of-type(2) {
+  margin: 0 62px 0 0;
+}
+
+.fallacy-of-speedometer > input:last-of-type {
+  background: #d6e5ff;
+  margin: 0 0 0 18px;
+}
+
+.fallacy-of-speedometer > input:focus,
+.calc >select:focus {
+  outline: none;
+}
+
+.fallacy-of-speedometer > input::-webkit-inner-spin-button,
+.fallacy-of-speedometer > input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .title {
+    font-size: 3.5rem;
+  }
+  .site-description {
+    font-size: 1.1rem;
+  }
+  .logo__svg {
+    width: 246px;
+    height: 75px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+    max-width: 300px;
+  }
+  .site-description {
+      font-size: 1.2rem;
+  }
+  .logo__svg {
+      width: 197px;
+      height: 60px;
+    }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
