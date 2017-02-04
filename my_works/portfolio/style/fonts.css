@@ -2,3 +2,8 @@
   font-family: 'Bazar';
   src: url('../fonts/Bazar.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: 'SeasideResortNF';
+  src: url('../fonts/SeasideResortNF.ttf') format('truetype');
+}
