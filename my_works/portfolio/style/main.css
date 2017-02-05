@@ -161,11 +161,43 @@ a.nav__item_contact {
   font-size: 1.375rem;
 }
 
-.slider__arrow {
-  background-color: #fbfaf6;
-  width: 100px;
-  height: 100px;
+.slider__nav {
   position: absolute;
-  top: 50%;
-  border-radius: 0 / 50%;
+  top: 192px;
+}
+
+.slider__nav_left-ellipse {
+  background: url('../img/Ellipse.png') no-repeat;
+  left: 10px;
+  width: 35px;
+  height: 60px;
+  background-size: contain;
+}
+
+.slider__nav_right-ellipse {
+  background: url('../img/Ellipse-right.png') no-repeat;
+  right: 0px;
+  width: 35px;
+  height: 60px;
+  background-size: contain;
+}
+
+.slider__nav > a {
+  width: 15px;
+  height: 20px;
+  position: absolute;
+  z-index: 3;
+  top: 19px;
+}
+
+.slider__nav_left-arrow {
+  background: url('../img/Left-arrow.png') no-repeat;
+  background-size: contain;
+  left: 0px;
+}
+
+.slider__nav_right-arrow {
+  background: url('../img/Right-arrow.png') no-repeat;
+  background-size: contain;
+  right: 8px;
 }
