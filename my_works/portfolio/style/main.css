@@ -94,5 +94,78 @@ a.nav__item_contact {
 .section_welcome-page {
   background-image: url('../img/welcome-pageBG.jpg');
   background-size: contain;
-  height: calc(100vh - 130px);
+  width: auto;
+  height: auto;
+  padding: 1px;
+}
+
+.retro__logo_first,
+.retro__logo_second {
+  width: 400px;
+  height: auto;
+  position: absolute;
+}
+
+.retro__logo_first {
+  top: 177px;
+  left: 500px;
+}
+
+.retro__logo_second {
+  top: 155px;
+  left: 512px;
+}
+
+.retro__ribbon {
+  width: 611px;
+  height: auto;
+  position: absolute;
+  top: 310px;
+  left: 394px;
+}
+
+.retro__rebbon_text {
+  text-transform: uppercase;
+  font: 21px 'Bazar';
+  letter-spacing: 0.03rem;
+  position: absolute;
+  top: 328px;
+  left: 606px;
+}
+
+.slider {
+  display: inline-block;
+  width: auto;
+  background-color: #fbfaf6;
+  margin: 290px 0 100px 219px;
+  padding: 10px 10px 15px 10px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.slider__content {
+  display: inline-block;
+  background: #e3dfd7;
+  width: 940px;
+  height: 400px;
+  margin: 0;
+  border-radius: 3px;
+}
+
+.slider__content::after {
+  content: 'kodak camera';
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 412px 10px 10px 10px;
+  font-size: 1.375rem;
+}
+
+.slider__arrow {
+  background-color: #fbfaf6;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  border-radius: 0 / 50%;
 }
