@@ -35,7 +35,7 @@ body {
 }
 
 .header {
-    background: url("../img/background.jpg")  no-repeat center / cover;
+    background: url("../img/background.jpg")  no-repeat 0% 50% / cover;
     height: 843px;
     margin: 0 0 5%;
 }
@@ -61,6 +61,7 @@ body {
     font: 4.5rem ProximaNovaBold;
     text-transform: uppercase;
     max-width: 520px;
+    margin: 46px 0;
 }
 
 .site-description {
@@ -116,7 +117,7 @@ body {
 }
 
 .main-block {
-	margin: 0 0 51px;
+	margin: 0 0 44px;
 }
 
 .blue-line {
@@ -198,17 +199,18 @@ input {
 
  .main-block__left-name._clearance {
  	width: 270px;
-  padding: 13px 2px 0px 0px;
+  padding: 10px 2px 0px 0px;
  }
 
 .main-block__right {
 	display: inline-block;
+  margin: -3px 1px;
 }
 
 .main-block__right-img {
 	background: url(../img/tire.png) no-repeat;
 	width: 350px;
-	height: 300px;
+	height: 310px;
 }
 
 .fallacy-of-speedometer {
@@ -272,6 +274,7 @@ input::-webkit-outer-spin-button {
 
   .header {
     height: auto;
+    background-position: center;
   }
 
   .site-description {
@@ -290,6 +293,7 @@ input::-webkit-outer-spin-button {
     }
     .header {
       height: auto;
+      background-position: center;
     }
 
     .site-description {
