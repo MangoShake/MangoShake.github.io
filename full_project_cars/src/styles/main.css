@@ -29,16 +29,15 @@ body {
 }
 
 body {
-	font: 16px/1 'ProximaNovaRegular';
+	font: 100% 'ProximaNovaRegular';
   color: #464646;
-      min-width: 620px;
+  min-width: 620px;
 }
 
 .header {
     background: url("../img/background.jpg")  no-repeat center / cover;
-    min-height: 843px;
-    min-width: 500px;
-    margin: 0 0 66px;
+    height: 843px;
+    margin: 0 0 5%;
 }
 
 .container {
@@ -75,9 +74,9 @@ body {
     background: #2569d9;
     width: 84px;
     height: 10px;
-    margin: 55px 0 60px;
+    margin: 57px 0 58px;
 }
-/*****************************************/
+
 .calculator {
   margin: 0 0 60px;
   font-family:  'ProximaNovaLight';
@@ -115,27 +114,22 @@ body {
 .new-size {
   padding: 0 17px 0 0;
 }
-/****************************************/
+
 .main-block {
-	margin: 0 0 52px;
+	margin: 0 0 51px;
 }
 
 .blue-line {
   width: 78.5%;
   min-width: 500px;
-  height: 42px;
+  height: 41px;
   background: #2569d9;
   margin: 0 0 24px;
 }
 
 
 .main-block__header {
-	display: inline-block;
 	line-height: 2.85;
-	vertical-align: middle;
-	background: #2569d9;
-	color: white;
-	margin: 0 0 25px;
 	padding: 0 15px;
 	box-sizing: border-box;
 }
@@ -147,15 +141,15 @@ body {
   font-size: .75rem;
   line-height: 2;
   letter-spacing: .02rem;
+  width: 90px;
 }
 
-li.main-block__header-item {
-  list-style: none;
+.main-block__header-item_sizes {
+  margin: 0 1px;
 }
 
-span.main-block__header-item {
-  min-width: 90px;
-	margin: 0 1px;
+.main-block__header-item_new-size {
+  margin: 1px 2px;
 }
 
 .main-block__lr-wrap {
@@ -164,14 +158,13 @@ span.main-block__header-item {
 
 .main-block__left {
 	display: inline-block;
-	vertical-align: top;
   padding: 0 35px 0 15px;
+  float: left;
 }
 
 .main-block__left-line {
 	display: block;
-	margin: 0 0 15px 0;
-	vertical-align: middle;
+	margin: 0 0 13px 0;
 }
 
 .main-block__left-name {
@@ -180,71 +173,10 @@ span.main-block__header-item {
 	min-width: 80px;
   vertical-align: top;
 	margin: 0 12px 0 0;
-  padding: 7px 0 0 1px;
+  padding: 8px 0 0 1px;
 }
 
-.main-block__left-input {
-	display: inline-block;
-	min-height: 31px;
-	max-width: 70px;
-	background: #ebebeb;
-	border: none;
-	margin: 0 11px 0 0;
-	padding: 0 5px;
-	outline: none;
-}
-
- .main-block__left-input_blue {
- 	background: #d6e5ff;
- }
-
- .main-block__left-name._clearance {
- 	width: 270px;
- }
-
-.main-block__right {
-	display: inline-block;
-	vertical-align: top;
-}
-
-.main-block__right-img {
-	background: url(../img/tire.png) no-repeat;
-	width: 350px;
-	height: 300px;
-}
-/***************************************************/
-.fallacy-of-speedometer {
-  font-family: 'ProximaNovaLight';
-  margin: 0 0 100px;
-}
-
-.block-name {
-  font: 1.125rem 'ProximaNovaBold';
-  display: inline-block;
-  margin: 0 0 21px;
-}
-
-.block-head {
-  margin: 0;
-  padding: 0;
-}
-
-ul.block-head li:first-child {
-  width: 160px;
-  padding: 10px 15px 6px 16px;
-}
-
-ul.block-head li:nth-child(2) {
-  width: 130px;
-  padding: 10px 15px 6px 12px;
-}
-
-ul.block-head li:nth-child(3) {
-  width: 55px;
-  padding: 10px 15px 6px 14px;
-}
-
-.fallacy {
+input {
   height: 21px;
   width: 62px;
   background: #ebebeb;
@@ -256,54 +188,112 @@ ul.block-head li:nth-child(3) {
   letter-spacing: .1rem
 }
 
-.fallacy-of-speedometer > input:first-of-type {
+ .input_blue {
+ 	background: #d6e5ff;
+ }
+
+.main-block__left-input {
+  margin: 0px 12px 0px 0px;
+}
+
+ .main-block__left-name._clearance {
+ 	width: 270px;
+  padding: 13px 2px 0px 0px;
+ }
+
+.main-block__right {
+	display: inline-block;
+}
+
+.main-block__right-img {
+	background: url(../img/tire.png) no-repeat;
+	width: 350px;
+	height: 300px;
+}
+
+.fallacy-of-speedometer {
+  font-family: 'ProximaNovaLight';
+  margin: 0 0 100px;
+}
+
+.block-name {
+  font: 1.125rem 'ProximaNovaBold';
+  display: inline-block;
+  margin: 0 0 21px;
+}
+
+.speed-fault-name__indication {
+  width: 160px;
+  padding: 10px 15px 6px 16px;
+}
+
+.speed-fault-name__real {
+  width: 130px;
+  padding: 10px 15px 6px 12px;
+}
+
+.speed-fault-name__difference {
+  width: 55px;
+  padding: 10px 15px 6px 14px;
+}
+
+.speed-fault-value__indication {
   margin: 0 105px 0 19px;
 }
 
-
-.fallacy-of-speedometer > input:nth-of-type(2) {
+.speed-fault-value__real {
   margin: 0 62px 0 0;
 }
 
-.fallacy-of-speedometer > input:last-of-type {
+.speed-fault-value__difference {
   background: #d6e5ff;
   margin: 0 0 0 18px;
 }
 
-.fallacy-of-speedometer > input:focus,
-.calc >select:focus {
+input:focus,
+select:focus {
   outline: none;
 }
 
-.fallacy-of-speedometer > input::-webkit-inner-spin-button,
-.fallacy-of-speedometer > input::-webkit-outer-spin-button {
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 520px) and (max-width: 1024px) {
   .title {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
-  .site-description {
-    font-size: 1.1rem;
-  }
+
   .logo__svg {
     width: 246px;
     height: 75px;
   }
+
+  .header {
+    height: auto;
+  }
+
+  .site-description {
+    padding: 0 0 30px;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 520px) {
   .title {
     font-size: 2.5rem;
     max-width: 300px;
   }
-  .site-description {
-      font-size: 1.2rem;
-  }
   .logo__svg {
       width: 197px;
       height: 60px;
+    }
+    .header {
+      height: auto;
+    }
+
+    .site-description {
+      padding: 0 0 30px;
     }
   .container {
     width: 90%;

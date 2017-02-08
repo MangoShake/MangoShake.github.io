@@ -65,40 +65,40 @@
 
     <main class="main-block">
       <div class="main-block__header blue-line">
-        <span class="main-block__header-item">Размеры</span>
-        <span class="main-block__header-item">Старый</span>
-        <span class="main-block__header-item">Новый</span>
-        <span class="main-block__header-item">Разница</span>
+        <span class="main-block__header-item main-block__header-item_sizes">Размеры</span>
+        <span class="main-block__header-item main-block__header-item_old-size">Старый</span>
+        <span class="main-block__header-item main-block__header-item_new-size">Новый</span>
+        <span class="main-block__header-item main-block__header-item_difference">Разница</span>
       </div>
       <div class="main-block__lr-wrap">
         <div class="main-block__left">
           <div class="main-block__left-line">
             <span class="main-block__left-name">p (мм)</span>
-            <input class="main-block__left-input" type="text">
-            <input class="main-block__left-input" type="text">
-            <input class="main-block__left-input main-block__left-input_blue" type="text">
+            <input class="main-block__left-input" type="number">
+            <input class="main-block__left-input" type="number">
+            <input class="main-block__left-input input_blue" type="number">
           </div>
           <div class="main-block__left-line">
             <span class="main-block__left-name">с (мм)</span>
-            <input class="main-block__left-input" type="text">
-            <input class="main-block__left-input" type="text">
-            <input class="main-block__left-input main-block__left-input_blue" type="text">
+            <input class="main-block__left-input" type="number">
+            <input class="main-block__left-input" type="number">
+            <input class="main-block__left-input input_blue" type="number">
           </div>
           <div class="main-block__left-line">
             <span class="main-block__left-name">d (мм)</span>
-            <input class="main-block__left-input" type="text">
-            <input class="main-block__left-input" type="text">
-            <input class="main-block__left-input main-block__left-input_blue" type="text">
+            <input class="main-block__left-input" type="number">
+            <input class="main-block__left-input" type="number">
+            <input class="main-block__left-input input_blue" type="number">
           </div>
           <div class="main-block__left-line">
             <span class="main-block__left-name">h (мм)</span>
-            <input class="main-block__left-input" type="text">
-            <input class="main-block__left-input" type="text">
-            <input class="main-block__left-input  main-block__left-input_blue" type="text">
+            <input class="main-block__left-input" type="number">
+            <input class="main-block__left-input" type="number">
+            <input class="main-block__left-input  input_blue" type="number">
           </div>
           <div class="main-block__left-line">
             <span class="main-block__left-name _clearance">Изменение клиренса (мм)</span>
-            <input class="main-block__left-input  main-block__left-input_blue main-block__left-input_right" type="text">
+            <input class="main-block__left-input  input_blue main-block__left-input_right" type="number">
           </div>
         </div>
         <div class="main-block__right">
@@ -110,16 +110,14 @@
 
     <div class="fallacy-of-speedometer">
       <span class="block-name">Погрешность в показаниях спидометра в км/час</span>
-      <div class="blue-line speed-indicators">
-        <ul class="block-head">
-          <li class="main-block__header-item">Показания спидометра</li>
-          <li class="main-block__header-item">Реальная скорость</li>
-          <li class="main-block__header-item">Разница</li>
-        </ul>
+      <div class="blue-line speed-fault-name">
+        <span class="main-block__header-item speed-fault-name__indication">Показания спидометра</span>
+        <span class="main-block__header-item speed-fault-name__real">Реальная скорость</span>
+        <span class="main-block__header-item speed-fault-name__difference">Разница</span>
       </div>
-      <input value="90" type="number" class="fallacy"></input>
-      <input type="number" class="fallacy"></input>
-      <input type="number" class="fallacy"></input>
+      <input value="90" type="number" class="speed-fault-value__indication"></input>
+      <input type="number" class="speed-fault-value__real"></input>
+      <input type="number" class="speed-fault-value__difference input_blue"></input>
     </div>
 
   </div>
