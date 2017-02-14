@@ -224,6 +224,15 @@ input::-webkit-outer-spin-button {
 .bottom-calculator__input_indication {
   margin: 0 65px 0 20px; }
 
+/*MEDIA*/
+
+@media screen and (min-width: 1068px) {
+  .site-description {
+    font: 2rem/2 ProximaNovaLight;
+    width: 460%;
+}
+}
+
 @media screen and (max-width: 1067px) {
   .container_main-block {
     margin: 0 9%;
