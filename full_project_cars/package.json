@@ -1,0 +1,15 @@
+{
+  "name": "full_project_cars",
+  "version": "1.0.0",
+  "description": "* HTML5\r * CSS3\r * JavaScript",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
