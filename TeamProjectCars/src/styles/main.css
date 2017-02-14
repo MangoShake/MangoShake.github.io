@@ -8,6 +8,10 @@ body {
   color: #464646;
   min-width: 680px; }
 
+  * {
+    cursor: default;
+  }
+
 input {
   height: 21px;
   width: 63px;
@@ -17,10 +21,16 @@ input {
   text-align: right;
   border: none;
   padding: 5px 8px;
-  letter-spacing: .1rem; }
+  letter-spacing: .1rem;
+  cursor: text;}
+
+select {
+  cursor: pointer;
+}
 
 input:focus,
-select:focus {
+select:focus,
+button:focus {
   outline: none; }
 
 input::-webkit-inner-spin-button,
@@ -101,61 +111,67 @@ input::-webkit-outer-spin-button {
 .bottom-calculator__header_blue-line {
   width: 785px;
   height: 41px;
-  background: #2569d9;
-  margin: 0 0 24px; }
+  background: #2569d9; }
 
 .clearance-calculator__header_name,
 .bottom-calculator__header_name {
-  display: inline-block;
+
+  display: inline-flex;
+  flex-flow: row;
   color: #fff;
   text-transform: uppercase;
   font-size: .75rem;
   letter-spacing: .02rem;
-  padding: 14px 0; }
+  padding: 14px 0 0; }
 
 .clearance-calculator__input_blue,
 .bottom-calculator__input_blue {
   background: #d6e5ff; }
 
 .clearance-calculator {
-  margin: 0 0 44px; }
+  margin: 0 0 68px; }
+
+.clearance-calculator__header_blue-line {
+  margin: 0 0 20px;
+}
 
 .clearance-calculator__header_name {
-  width: 92px; }
+  width: 92px;}
 
 .clearance-calculator__header_sizes {
   margin: 0 0 0 16px; }
 
 .clearance-calculator__content {
-  display: block; }
+  display: inline-flex;
+  flex-direction: row; }
 
 .clearance-calculator__content_left {
-  display: inline-block;
-  margin: 0 34px 0 15px;
-  vertical-align: top; }
+  display: inline-flex;
+  flex-direction: column;
+  margin: 5px 35px 0 0; }
 
 .clearance-calculator__line {
   display: block;
-  margin: 0 0 13px; }
+  margin: 0 0 20px 15px; }
+
+  .clearance-calculator__content_left > div:nth-child(5) {
+    margin: 0 0 37px 15px;
+  }
 
 .clearance-calculator__line-name {
   display: inline-block;
-  min-height: 30px;
-  min-width: 80px;
-  vertical-align: top;
-  margin: 0 13px 0 0;
-  padding: 8px 0 0; }
+  width: 42px;
+  margin: 0 50px 0 0;
+  padding: 5px 0;}
 
 .clearance-calculator__input {
-  margin: 0 12px 0 0; }
+  margin: 0 13px 0 0; }
 
 .clearance-calculator__clearance-changes {
   width: 270px;
-  padding: 10px 0; }
-
-.clearance-calculator__content_right {
-  display: inline-block;
-  margin: -3px 0; }
+  padding: 10px 0;
+  margin: 0 14px 0 0;
+  vertical-align: top; }
 
 .clearance-calculator__right-img {
   background: url(../img/tire.png) no-repeat;
@@ -164,26 +180,33 @@ input::-webkit-outer-spin-button {
 
   /**************************************/
   .btn-count {
+    font: 14px 'ProximaNovaBold';
+    letter-spacing: -0.045em;
   	background: #272725;
   	color: #fff;
-  	border-radius: 4px;
-  	transition: 400ms;
+    border: 1px solid #272725;
+  	border-radius: 3px;
   	height: 52px;
   	width: 140px;
-  	border: 1px;
-  	margin: 3px 0 0 -17px;
+  	transition: 400ms;
   	text-transform: uppercase;
   }
 
   .btn-count:hover {
   background: #2569d9;
+  border-color: #2569d9;
   text-transform: uppercase;
+  cursor: pointer;
   }
 /**************************/
 
 .bottom-calculator {
   font-family: 'ProximaNovaLight';
   margin: 0 0 100px; }
+
+.bottom-calculator__header_blue-line {
+  margin: 0 0 24px;
+}
 
 .bottom-calculator_name {
   display: inline-block;
