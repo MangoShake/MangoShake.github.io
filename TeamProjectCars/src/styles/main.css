@@ -162,6 +162,25 @@ input::-webkit-outer-spin-button {
   width: 345px;
   height: 310px; }
 
+  /**************************************/
+  .btn-count {
+  	background: #272725;
+  	color: #fff;
+  	border-radius: 4px;
+  	transition: 400ms;
+  	height: 52px;
+  	width: 140px;
+  	border: 1px;
+  	margin: 3px 0 0 -17px;
+  	text-transform: uppercase;
+  }
+
+  .btn-count:hover {
+  background: #2569d9;
+  text-transform: uppercase;
+  }
+/**************************/
+
 .bottom-calculator {
   font-family: 'ProximaNovaLight';
   margin: 0 0 100px; }
