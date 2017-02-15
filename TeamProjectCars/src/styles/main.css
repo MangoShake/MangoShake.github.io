@@ -185,9 +185,9 @@ input::-webkit-outer-spin-button {
   .btn-count {
     font: 14px 'ProximaNovaBold';
     letter-spacing: -0.045em;
-  	background: #272725;
+  	background: rgba(39, 39, 39, .85);
   	color: #fff;
-    border: 1px solid #272725;
+    border: 1px solid rgba(39, 39, 39, .85);
   	border-radius: 3px;
   	height: 52px;
   	width: 140px;
@@ -228,11 +228,14 @@ input::-webkit-outer-spin-button {
 
 /*Footer*/
 
+.container_footer {
+position: relative;
+}
+
 .footer {
     width: 100%;
     height: auto;
     background: #272725;
-    position: relative;
 }
 
 .footer__content {
@@ -244,7 +247,7 @@ input::-webkit-outer-spin-button {
 }
 
 .footer__info {
-  margin: 0 5%;
+  margin: 0 3% 0 0;
   height: 35px;
 }
 
@@ -269,7 +272,7 @@ input::-webkit-outer-spin-button {
 .footer__info_date {
   position: absolute;
   top: auto;
-  right: 6%;
+  right: 3%;
 }
 
 /*MEDIA*/
