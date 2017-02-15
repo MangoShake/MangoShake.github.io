@@ -360,7 +360,6 @@ input::-webkit-outer-spin-button {
     width: 500px;
   }
 
-.test{}
   .clearance-calculator__content {
     display: inline-flex;
     flex-direction: column;
