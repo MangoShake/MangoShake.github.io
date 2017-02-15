@@ -234,8 +234,10 @@ position: relative;
 
 .footer {
     width: 100%;
+    min-width: 597px;
     height: auto;
     background: #272725;
+    padding: 3px;
 }
 
 .footer__content {
@@ -285,14 +287,15 @@ position: relative;
 
   .top-calculator__row_old-size,
   .top-calculator__row_new-size {
-    font: 1.8rem/1.3 ProximaNovaLight;
+    font: 1.8rem/1.3 'ProximaNovaLight';
   }
 }
 
-@media screen and (max-width: 1067px) {
+@media screen and (min-width: 999px) and (max-width: 1067px) {
   .container_main-block {
     margin: 0 9%;
-    width: auto; } }
+    width: auto; }
+}
 
 @media screen and (min-width: 963px) and (max-width: 1000px) {
   .title {
@@ -305,11 +308,12 @@ position: relative;
     background-position: center; }
   .site-description {
     padding: 0 0 30px; }
+
+    .footer__info_logo {
+    padding: 0 4px; }
   }
 
-/*footer margin other %*/
-
-@media screen and (max-width: 962px) {
+@media screen and (min-width: 825px) and (max-width: 962px) {
   .title {
     font-size: 2.6rem;
     max-width: 300px;
@@ -364,6 +368,42 @@ position: relative;
  .bottom-calculator__input_blue {
    margin-right: 0;
  }
+}
+
+@media screen and (min-width: 798px) and (max-width: 824px) {
+  .container_footer {
+    width: 80%;
+    margin: 0 9%;
+  }
+
+  .footer__info {
+    margin: 0 5px 0 0;
+  }
+
+  .footer__info_logo {
+    padding: 0 3px;
+    width: 15px;
+  }
+
+  .footer__link-img {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 797px) {
+  .container_footer {
+    width: 70%;
+    margin: 0 9%;
+  }
+
+  .footer__link-img {
+    height: auto;
+    margin: 0;
+  }
+
+  .footer__info_logo {
+    width: 15px;
+  }
 }
 
 @media screen and (max-width: 567px) {
