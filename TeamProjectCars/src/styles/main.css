@@ -9,9 +9,9 @@ body {
   min-width: 500px;
 }
 
-  * {
-    cursor: default;
-  }
+* {
+  cursor: default;
+}
 
 input {
   height: 21px;
@@ -25,7 +25,9 @@ input {
   letter-spacing: .1rem;
   cursor: text;}
 
-select {
+select,
+.footer__content a,
+.footer__content a > img {
   cursor: pointer;
 }
 
@@ -65,7 +67,7 @@ input::-webkit-outer-spin-button {
 
 .site-description {
   font: 1rem/1.5 ProximaNovaLight;
-  max-width: 490px; }
+  width: 490px; }
 
 .site-description:before {
   display: block;
@@ -183,9 +185,9 @@ input::-webkit-outer-spin-button {
   .btn-count {
     font: 14px 'ProximaNovaBold';
     letter-spacing: -0.045em;
-  	background: #272725;
+  	background: rgba(39, 39, 39, .85);
   	color: #fff;
-    border: 1px solid #272725;
+    border: 1px solid rgba(39, 39, 39, .85);
   	border-radius: 3px;
   	height: 52px;
   	width: 140px;
@@ -224,19 +226,76 @@ input::-webkit-outer-spin-button {
 .bottom-calculator__input_indication {
   margin: 0 65px 0 20px; }
 
+/*Footer*/
+
+.container_footer {
+position: relative;
+}
+
+.footer {
+    width: 100%;
+    min-width: 597px;
+    height: auto;
+    background: #272725;
+    padding: 3px;
+}
+
+.footer__content {
+  width: 80%;
+  padding: 5px;
+  display: inline-flex;
+  flex-direction: row;
+  vertical-align: bottom;
+}
+
+.footer__info {
+  margin: 0 3% 0 0;
+  height: 35px;
+}
+
+.footer__link-img,
+.footer__info_date {
+    display: inline-block;
+    width: auto;
+    height: 25px;
+    margin: 10px 0 0;
+    vertical-align: bottom;
+    text-decoration: none;
+    color: #d9d9d9;
+    font: 12px 'ProximaNovaLight';
+    line-height: 1.5;
+}
+
+.footer__info_logo {
+  padding: 0 8px;
+  vertical-align: middle;
+}
+
+.footer__info_date {
+  position: absolute;
+  top: auto;
+  right: 3%;
+}
+
 /*MEDIA*/
 
-@media screen and (min-width: 1068px) {
+@media screen and (min-width: 2000px) {
   .site-description {
-    font: 2rem/2 ProximaNovaLight;
-    width: 460%;
-}
+    font: 1.8rem/1.3 'ProximaNovaLight';
+    width: 95%;
 }
 
-@media screen and (max-width: 1067px) {
+  .top-calculator__row_old-size,
+  .top-calculator__row_new-size {
+    font: 1.8rem/1.3 'ProximaNovaLight';
+  }
+}
+
+@media screen and (min-width: 999px) and (max-width: 1067px) {
   .container_main-block {
     margin: 0 9%;
-    width: auto; } }
+    width: auto; }
+}
 
 @media screen and (min-width: 963px) and (max-width: 1000px) {
   .title {
@@ -249,9 +308,12 @@ input::-webkit-outer-spin-button {
     background-position: center; }
   .site-description {
     padding: 0 0 30px; }
+
+    .footer__info_logo {
+    padding: 0 4px; }
   }
 
-@media screen and (max-width: 962px) {
+@media screen and (min-width: 825px) and (max-width: 962px) {
   .title {
     font-size: 2.6rem;
     max-width: 300px;
@@ -306,6 +368,42 @@ input::-webkit-outer-spin-button {
  .bottom-calculator__input_blue {
    margin-right: 0;
  }
+}
+
+@media screen and (min-width: 798px) and (max-width: 824px) {
+  .container_footer {
+    width: 80%;
+    margin: 0 9%;
+  }
+
+  .footer__info {
+    margin: 0 5px 0 0;
+  }
+
+  .footer__info_logo {
+    padding: 0 3px;
+    width: 15px;
+  }
+
+  .footer__link-img {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 797px) {
+  .container_footer {
+    width: 70%;
+    margin: 0 9%;
+  }
+
+  .footer__link-img {
+    height: auto;
+    margin: 0;
+  }
+
+  .footer__info_logo {
+    width: 15px;
+  }
 }
 
 @media screen and (max-width: 567px) {
