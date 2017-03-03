@@ -23,9 +23,9 @@ input:focus,
 select:focus {
   outline: none; }
 
-input::-webkit-inner-spin-button,
-input::-webkit-outer-spin-button {
-  -webkit-appearance: none; }
+input:inner-spin-button,
+input:outer-spin-button {
+  appearance: none; }
 
 .header {
   background: url("../img/background.jpg") no-repeat 0% 50%/cover;
@@ -81,10 +81,7 @@ input::-webkit-outer-spin-button {
   font: .9375rem 'ProximaNovaLight';
   color: #262626;
   background: url("../img/arrow.png") 88% 50% no-repeat;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none; }
+  appearance: none; }
 
 .top-calculator__row_old-size,
 .top-calculator__row_new-size {
@@ -216,3 +213,12 @@ input::-webkit-outer-spin-button {
   .clearance-calculator__header_blue-line,
   .bottom-calculator__header_blue-line {
     width: 500px; } }
+
+/*# sourceMappingURL=main.css.map */
+ine,
+  .bottom-calculator__header_blue-line {
+    width: 500px; } }
+
+/*# sourceMappingURL=main.css.map */
+
+/*# sourceMappingURL=main.css.map */
