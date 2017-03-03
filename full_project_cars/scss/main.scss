@@ -19,7 +19,7 @@ input {
   text-align: right;
   border: none;
   padding: 5px 8px;
-  letter-spacing: .1rem
+  letter-spacing: .1rem;
 }
 
 input:focus,
@@ -27,9 +27,9 @@ select:focus {
   outline: none;
 }
 
-input::-webkit-inner-spin-button,
-input::-webkit-outer-spin-button {
-    -webkit-appearance: none;
+input:inner-spin-button,
+input:outer-spin-button {
+    appearance: none;
 }
 
 .header {
@@ -96,9 +96,6 @@ input::-webkit-outer-spin-button {
   color: #262626;
   background: url('../img/arrow.png') 88% 50% no-repeat;
   appearance: none;
-  -webkit-appearance: none;
-   -moz-appearance: none;
-   -ms-appearance: none;
 }
 
 .top-calculator__row_old-size,
