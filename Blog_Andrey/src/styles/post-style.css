@@ -10,11 +10,11 @@
   margin: 0 0 45px 0;
   padding-bottom: 45px;
   font-family: "Rockwell";
-  border: 1px solid;
-  -moz-border-image: url('/src/img/Post-bottom-border.png') 0 0 10 0;
-   -webkit-border-image: url('/src/img/Post-bottom-border.png') 0 0 10 0;
-   -o-border-image: url('/src/img/Post-bottom-border.png') 0 0 10 0;
-   border-image: url('/src/img/Post-bottom-border.png') 0 0 10 0;
+  border-bottom: 1px solid;
+  -moz-border-image: url('../img/Post-bottom-border.png') 0 0 10 0;
+   -webkit-border-image: url('../img/Post-bottom-border.png') 0 0 10 0;
+   -o-border-image: url('../img/Post-bottom-border.png') 0 0 10 0;
+   border-image: url('../img/Post-bottom-border.png') 0 0 10 0;
 }
 
 .post__content_left,
