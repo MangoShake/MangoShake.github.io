@@ -1,0 +1,265 @@
+/* Media queries*/
+
+@media screen and (min-width: 1201px) {
+
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+
+  .header {
+    height: 220px;
+  }
+
+  .container {
+      width: 90%;
+      height: auto;
+      margin: auto;
+  }
+
+  .navigation-container {
+    margin-left: 5%;
+  }
+
+  .navigation {
+    margin-top: 115px;
+  }
+
+  .navigation_menu {
+    width: 740px;
+    margin: auto;
+  }
+
+  .navigation__link {
+    font-size: 20px;
+    margin: 0 40px 0 0;
+    letter-spacing: 0.085rem;
+  }
+
+  .navigation__item_home {
+    margin: 0;
+  }
+
+  .logo {
+    vertical-align: -70px;
+    height: auto;
+    width: 245px;
+  }
+
+  .navigation__submenu {
+    display: none;
+    width: 95px;
+    right: 180px;
+  }
+
+  .navigation__submenu::before {
+    width: 120px;
+  }
+
+  .welcome-phrase_hello {
+    margin-left: 28%;
+  }
+
+  .post__content_right {
+    width: 80%;
+    height: auto;
+    padding: 0 0 5px;
+  }
+
+  .post__date {
+    width: 90px;
+    height: 90px;
+    border: 3px solid rgba(142, 142, 142, 0.25);
+    border-radius: 50px;
+    text-align: center;
+  }
+
+  .post__date_text {
+    display: inline-block;
+    color: rgb(62, 179, 165);
+    font-size: 28px;
+    font-weight: bold;
+    padding: 29px 0;
+  }
+
+  .post__date:hover {
+    border: 3px solid rgba(142, 142, 142, 0.4);
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer__button {
+    margin: 20px 20px 65px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .header {
+  height: 80px;
+  }
+
+  .container {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
+  .navigation {
+    margin-top: 80px;
+    width: auto;
+    top: 0;
+    left: 300px;
+    height: auto;
+  }
+
+  .grey-line {
+    display: none;
+  }
+
+  .navigation_menu {
+    text-align: center;
+  }
+
+  .navigation__item,
+  .navigation__item_home {
+    display: block;
+    margin: 15px;
+    padding: 10px;
+    background-color: rgba(180, 180, 180, 0.3);
+  }
+
+  .navigation__item:hover {
+    background-color: rgba(180, 180, 180, 0.38);
+  }
+
+  .navigation__item_contact {
+    border: none;
+  }
+
+  .navigation__link {
+    margin: 0;
+    padding: 0;
+}
+
+  .navigation__link:hover {
+    border-bottom: none;
+  }
+
+  .logo {
+    position: absolute;
+    top: -10px;
+    left: -400px;
+  }
+
+  .navigation__submenu {
+    display: none;
+    /*display: block;*/
+    width: 90%;
+    top: 10px;
+    right: 0;
+    padding: 5px;
+    margin: 0;
+    position: relative;
+    background-color: rgba(160, 160, 160, .0);
+  }
+
+  .navigation__submenu_cat{
+    width: 100%;
+    text-align: center;
+  }
+
+  a.navigation__submenu_cat-link {
+    width: auto;
+    padding: 5px 50px;
+  }
+
+  .navigation__submenu::before {
+    display: none;
+  }
+
+  .welcome-phrase {
+    text-align: center;
+    height: auto;
+  }
+
+  .welcome-phrase_hello {
+    margin: 30px 0;
+  }
+
+  .likes_logo:hover,
+  .comments_logo:hover {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px 0 0;
+    opacity: 0.6;
+  }
+
+  .post__date {
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 50px;
+  }
+
+  .post__date_text {
+    display: inline-block;
+    color: rgb(62, 179, 165);
+    font-size: 23px;
+    font-weight: bold;
+    padding: 0;
+  }
+
+  .post__date:hover {
+    border: none;
+  }
+
+  .post__content_right {
+    width: auto;
+    height: auto;
+    padding: 0 0 5px;
+  }
+
+  .post__topInfo {
+    font-size: 13px;
+    display: inline-block;
+    border-top: 1px solid rgba(142, 142, 142, 0.15);
+  }
+
+  .post__topInfo_item {
+    padding: 5px 10px;
+    display: block;
+    border: none;
+  }
+
+  .post__name {
+    font-size: 18px;
+  }
+
+  .post__text {
+    font-size: 14px;
+    display: inline-block;
+    width: 70%;
+  }
+
+  .post__read-more {
+    display: block;
+    width: 95px;
+  }
+
+  .footer {
+    padding: 0;
+    text-align: center;
+  }
+
+  .footer__button {
+    padding: 10px 15px;
+    margin: 20px 20px 55px 20px;
+  }
+
+  .footer__info {
+    padding: 0;
+  }
+}

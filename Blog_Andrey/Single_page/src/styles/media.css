@@ -16,6 +16,10 @@
       margin: auto;
   }
 
+  .navigation-container {
+    margin-left: 5%;
+  }
+
   .navigation {
     margin-top: 115px;
   }
@@ -27,7 +31,7 @@
 
   .navigation__link {
     font-size: 20px;
-    margin: 0 30px 0 0;
+    margin: 0 40px 0 0;
     letter-spacing: 0.085rem;
   }
 
@@ -38,7 +42,7 @@
   .logo {
     vertical-align: -70px;
     height: auto;
-    width: 255px;
+    width: 245px;
   }
 
   .navigation__submenu {
@@ -81,20 +85,37 @@
     border: 3px solid rgba(142, 142, 142, 0.4);
   }
 
+  .story-comments__single-comment_left {
+    margin: 0 5px 0 0;
+  }
+
+  .story-comments__single-comment_right {
+    margin: 10px 0;
+  }
+
+  .reply-link {
+    margin: 0;
+  }
+
+  .story-comments__header_next-story {
+    margin: 0 0 0 50%;
+  }
+
+  .section-form__email-block,
+  .section-form__name-block {
+    display: block;
+  }
+
+  .section-form__user-name {
+    margin-left: 40px;
+  }
+
   .footer {
-    text-align: left;
+    text-align: center;
   }
 
   .footer__button {
-    margin: 20px 20px 65px 230px;
-  }
-
-  .footer__copyright {
-    margin: 10px 10px 10px 200px;
-  }
-
-  .footer__page-proofs {
-    margin: 10px 10px 10px 180px;
+    margin: 20px 20px 65px;
   }
 }
 
@@ -169,7 +190,7 @@
     background-color: rgba(160, 160, 160, .0);
   }
 
-  .navigation__submenu_cat{
+  .navigation__submenu_cat {
     width: 100%;
     text-align: center;
   }
@@ -247,9 +268,52 @@
     width: 70%;
   }
 
-  .post__read-more {
+  .story-comments__single-comment_left {
+    margin: 0 5px 0 0;
+  }
+
+  .story-comments__single-comment_right {
+    margin: 10px 0;
+  }
+
+  .reply-link {
+    margin: 0;
+  }
+
+  .story-comments__header {
+    text-align: center;
+  }
+
+  .story-comments__header_next-story {
+    margin: 25px 0;
     display: block;
-    width: 95px;
+  }
+
+  .send-reply,
+  .section-form__name {
+    text-align: left;
+    width: auto;
+  }
+
+  .section-form {
+    width: 80%;
+    margin-right: 0;
+  }
+
+  .section-form__email-block,
+  .section-form__name-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section-form__user-comment {
+    width: 95%;
+  }
+
+  .story-comments__single-comment_avatar {
+    width: 80px;
+    height: 80px;
   }
 
   .footer {
