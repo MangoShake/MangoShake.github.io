@@ -3,4 +3,5 @@
 ## Here I try to use and learn some technologies:
 * HTML5
 * CSS3
-* JavaScript (gulp, sass)
+* JavaScript
+* Gulp
