@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="shortcut icon" href="src/img/calculator.png" type="image/x-icon">
+
   <title>Tire Size Calculator</title>
   <link rel="stylesheet" href="src/styles/main.css">
   <link rel="stylesheet" href="src/styles/fonts.css">
@@ -17,7 +19,14 @@
 			</div>
 			<h1 class="title">Шинный калькулятор</h1>
 			<p class="site-description">
-				Наш шинный калькулятор позволяет подобрать шины по типоразмеру, он предназначен для математического расчета возможности установки шины на вашем автомобиле. Для начала расчета на шинном калькуляторе задайте старый размер шины и новый. После этого нажмите кнопку «рассчитать». Помимо наглядного отображения изменения размеров шин, при помощи нашего шинного калькулятора, вы можете увидеть погрешность спидометра вызванную установкой новых шин. Расчеты на данном шинном калькуляторе носят исключительно ознакомительный  и приблизительный характер.
+				Наш шинный калькулятор позволяет подобрать шины по типоразмеру.
+         Он предназначен для математического расчета возможности установки шины
+         на вашем автомобиле. Для начала расчета на шинном калькуляторе задайте
+         старый размер шины и новый. После этого нажмите кнопку «рассчитать».
+         Помимо наглядного отображения изменения размеров шин, при помощи нашего
+         шинного калькулятора, вы можете увидеть погрешность спидометра
+         вызванную установкой новых шин. Расчеты на данном шинном калькуляторе
+         носят исключительно ознакомительный  и приблизительный характер.
 			</p>
 		</div>
 	</header>
@@ -26,37 +35,37 @@
       <div class="top-calculator__row">
         <span class="top-calculator__row_old-size">Старый размер:</span>
         <select class="top-calculator__select  top-calculator__select_old-width" name="old-width">
-          <option class="top-calculator__select-option_old-width" value="">175</option>
-          <option class="top-calculator__select-option_old-width" value="">185</option>
-          <option class="top-calculator__select-option_old-width" value="">195</option>
+          <option class="top-calculator__select-option_old-width" value="175">175</option>
+          <option class="top-calculator__select-option_old-width" value="185">185</option>
+          <option class="top-calculator__select-option_old-width" value="195">195</option>
         </select>
         <select class="top-calculator__select  top-calculator__select_old-height" name="old-height">
-          <option class="top-calculator__select-option_old-height" value="">70</option>
-          <option class="top-calculator__select-option_old-height" value="">65</option>
-          <option class="top-calculator__select-option_old-height" value="">60</option>
+          <option class="top-calculator__select-option_old-height" value="70">70</option>
+          <option class="top-calculator__select-option_old-height" value="65">65</option>
+          <option class="top-calculator__select-option_old-height" value="60">60</option>
         </select>
         <select class="top-calculator__select  top-calculator__select_old-radius" name="old-radius">
-          <option class="top-calculator__select-option_old-radius" value="">R13</option>
-          <option class="top-calculator__select-option_old-radius" value="">R14</option>
-          <option class="top-calculator__select-option_old-radius" value="">R15</option>
+          <option class="top-calculator__select-option_old-radius" value="13">R13</option>
+          <option class="top-calculator__select-option_old-radius" value="14">R14</option>
+          <option class="top-calculator__select-option_old-radius" value="15">R15</option>
         </select>
       </div>
       <div class="top-calculator__row">
         <span class="top-calculator__row_new-size">Новый размер:</span>
         <select class="top-calculator__select  top-calculator__select_new-width" name="new-width">
-          <option class="top-calculator__select-option_new-width" value="">175</option>
-          <option class="top-calculator__select-option_new-width" value="">185</option>
-          <option class="top-calculator__select-option_new-width" value="">195</option>
+          <option class="top-calculator__select-option_new-width" value="175">175</option>
+          <option class="top-calculator__select-option_new-width" value="185">185</option>
+          <option class="top-calculator__select-option_new-width" value="195">195</option>
         </select>
         <select class="top-calculator__select  top-calculator__select_new-height" name="new-height">
-          <option class="top-calculator__select-option_new-height" value="">70</option>
-          <option class="top-calculator__select-option_new-height" value="">65</option>
-          <option class="top-calculator__select-option_new-height" value="">60</option>
+          <option class="top-calculator__select-option_new-height" value="70">70</option>
+          <option class="top-calculator__select-option_new-height" value="65">65</option>
+          <option class="top-calculator__select-option_new-height" value="60">60</option>
         </select>
         <select class="top-calculator__select  top-calculator__select_new-radius" name="new-radius">
-          <option class="top-calculator__select-option_new-radius" value="">R13</option>
-          <option class="top-calculator__select-option_new-radius" value="">R14</option>
-          <option class="top-calculator__select-option_new-radius" value="">R15</option>
+          <option class="top-calculator__select-option_new-radius" value="13">R13</option>
+          <option class="top-calculator__select-option_new-radius" value="14">R14</option>
+          <option class="top-calculator__select-option_new-radius" value="15">R15</option>
         </select>
       </div>
     </div>
@@ -71,34 +80,35 @@
         <div class="clearance-calculator__content_left">
           <div class="clearance-calculator__line">
             <span class="clearance-calculator__line-name">p (мм)</span>
-            <input class="clearance-calculator__input" type="number">
-            <input class="clearance-calculator__input" type="number">
-            <input class="clearance-calculator__input  clearance-calculator__input_blue" type="number">
+            <input class="clearance-calculator__input" type="number" disabled>
+            <input class="clearance-calculator__input" type="number" disabled>
+            <input class="clearance-calculator__input  clearance-calculator__input_blue" type="number" disabled>
           </div>
           <div class="clearance-calculator__line">
             <span class="clearance-calculator__line-name">с (мм)</span>
-            <input class="clearance-calculator__input" type="number">
-            <input class="clearance-calculator__input" type="number">
-            <input class="clearance-calculator__input  clearance-calculator__input_blue" type="number">
+            <input class="clearance-calculator__input" type="number" disabled>
+            <input class="clearance-calculator__input" type="number" disabled>
+            <input class="clearance-calculator__input  clearance-calculator__input_blue" type="number" disabled>
           </div>
           <div class="clearance-calculator__line">
             <span class="clearance-calculator__line-name">d (мм)</span>
-            <input class="clearance-calculator__input" type="number">
-            <input class="clearance-calculator__input" type="number">
-            <input class="clearance-calculator__input  clearance-calculator__input_blue" type="number">
+            <input class="clearance-calculator__input" type="number" disabled>
+            <input class="clearance-calculator__input" type="number" disabled>
+            <input class="clearance-calculator__input  clearance-calculator__input_blue" type="number" disabled>
           </div>
           <div class="clearance-calculator__line">
             <span class="clearance-calculator__line-name">h (мм)</span>
-            <input class="clearance-calculator__input" type="number">
-            <input class="clearance-calculator__input" type="number">
-            <input class="clearance-calculator__input  clearance-calculator__input_blue" type="number">
+            <input class="clearance-calculator__input" type="number" disabled>
+            <input class="clearance-calculator__input" type="number" disabled>
+            <input class="clearance-calculator__input  clearance-calculator__input_blue" type="number" disabled>
           </div>
           <div class="clearance-calculator__line">
             <span class="clearance-calculator__line-name  clearance-calculator__clearance-changes">Изменение клиренса (мм)</span>
-            <input class="clearance-calculator__input  clearance-calculator__input_blue" type="number">
+            <input class="clearance-calculator__input  clearance-calculator__input_blue" type="number" disabled>
           </div>
-          <div class="btn-container">
-          	<button class="btn-count" name="check-button" type="" value="">Рассчитать</button>
+          <div class="button-container">
+          	<button class="button-general button-count" name="check-button" type="" value="">Рассчитать</button>
+            <button class="button-general button-clear" name="clear-button" type="" value="">Очистить</button>
           </div>
         </div>
         <div class="clearance-calculator__content_right">
@@ -115,7 +125,7 @@
         <span class="bottom-calculator__header_name  bottom-calculator__header_difference">Разница</span>
       </div>
       <div class="bottom-calculator_inputs">
-        <input value="90" type="number" class="bottom-calculator__input bottom-calculator__input_indication">
+        <input value="60" type="number" class="bottom-calculator__input bottom-calculator__input_indication">
         <input type="number" class="bottom-calculator__input  bottom-calculator__input_real">
         <input type="number" class="bottom-calculator__input  bottom-calculator__input_difference  bottom-calculator__input_blue">
       </div>
@@ -126,19 +136,19 @@
       <div class="footer__content">
         <div class="footer__info  footer__info_github">
           <a class="footer__link-img" href="https://github.com/MangoShake/MangoShake.github.io/tree/master/TeamProjectCars" target="_blank">Учебный макет ProjectCars
-            <img class="footer__info_logo" src="/TeamProjectCars/src/img/github-logo.svg" alt="github link" width="20px" height="20"/>
+            <img class="footer__info_logo" src="/My_ProjectCars/src/img/github-logo.svg" alt="github link" width="20px" height="20"/>
             <!-- <img class="footer__info_logo" src="/src/img/github-logo.svg" alt="github link" width="20px" height="20"/> -->
           </a>
         </div>
         <div class="footer__info  footer__info_daria">
           <a class="footer__link-img" href="http://yourmentor.ru/" target="_blank">Курсы Дарьи Пушкарской
-            <img class="footer__info_logo" src="/TeamProjectCars/src/img/ym-logo.svg" alt="yourmentor.ru" width="20px" height="20"/>
+            <img class="footer__info_logo" src="/My_ProjectCars/src/img/ym-logo.svg" alt="yourmentor.ru" width="20px" height="20"/>
             <!-- <img class="footer__info_logo" src="/src/img/ym-logo.svg" alt="yourmentor.ru" width="20px" height="20"/> -->
           </a>
         </div>
         <div class="footer__info  footer__info_author">
           <a class="footer__link-img" href="https://vk.com/id13259454" target="_blank">Верстка: Савина Анастасия
-            <img class="footer__info_logo" src="/TeamProjectCars/src/img/vk-logo.svg" alt="vk link" width="20px" height="20"/>
+            <img class="footer__info_logo" src="/My_ProjectCars/src/img/vk-logo.svg" alt="vk link" width="20px" height="20"/>
             <!-- <img class="footer__info_logo" src="/src/img/vk-logo.svg" alt="vk link" width="20px" height="20"/> -->
           </a>
         </div>

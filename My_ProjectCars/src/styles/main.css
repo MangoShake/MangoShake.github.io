@@ -193,6 +193,7 @@ input::-webkit-outer-spin-button {
 
 .clearance-calculator__input {
   margin: 0 13px 0 0;
+  cursor: default;
 }
 
 .clearance-calculator__clearance-changes {
@@ -209,7 +210,7 @@ input::-webkit-outer-spin-button {
 }
 
 /**************************************/
-.btn-count {
+.button-general {
   font: 14px 'ProximaNovaBold';
   letter-spacing: -0.045em;
   background: rgba(39, 39, 39, .85);
@@ -222,11 +223,15 @@ input::-webkit-outer-spin-button {
   text-transform: uppercase;
 }
 
-.btn-count:hover {
+.button-general:hover {
   background: #2569d9;
   border-color: #2569d9;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.button-count {
+  margin: 0 100px 0 0;
 }
 /**************************/
 
@@ -383,8 +388,12 @@ margin: 0 40px;
     margin-bottom: 20px;
   }
 
-  .btn-count {
+  .button-general {
     margin-left: 17px;
+  }
+
+  .button-count {
+    margin: 0 90px 0 0;
   }
 
   .footer__info {
